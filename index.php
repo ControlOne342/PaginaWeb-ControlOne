@@ -8,7 +8,7 @@ include 'includes/header.php';
     <section class="relative bg-primary h-[600px] flex items-center">
         <!-- Background Image with Overlay -->
         <div class="absolute inset-0 z-0">
-            <img src="assets/img/Empresa.avif" alt="Fondo Industrial" class="w-full h-full object-cover opacity-40" fetchpriority="high">
+            <img src="assets/img/bodega-control-one-sellos-seguridad.avif" alt="Fondo Industrial" class="w-full h-full object-cover opacity-40" fetchpriority="high">
             <div class="absolute inset-0 bg-primary/80 mix-blend-multiply"></div>
         </div>
 
@@ -44,7 +44,7 @@ include 'includes/header.php';
                 <!-- Card 1: Alta Seguridad -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition-shadow duration-300">
                     <div class="h-48 bg-gray-200 relative overflow-hidden">
-                        <img src="assets/img/STAR-ONE.avif" alt="Sellos de Alta Seguridad" class="w-full h-full object-contain p-4">
+                        <img src="assets/img/sello-seguridad-star-one-indicativo.avif" alt="Sellos de Alta Seguridad" class="w-full h-full object-contain p-4">
                         <div class="absolute top-4 right-4 bg-accent text-white p-2 rounded-full">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
                         </div>
@@ -62,7 +62,7 @@ include 'includes/header.php';
                 <!-- Card 2: Plásticos -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition-shadow duration-300">
                     <div class="h-48 bg-gray-200 relative overflow-hidden">
-                        <img src="assets/img/Quantum.avif" alt="Sellos de Plástico" class="w-full h-full object-contain p-4">
+                        <img src="assets/img/precinto-plastico-quantum-ajustable.avif" alt="Sellos de Plástico" class="w-full h-full object-contain p-4">
                         <div class="absolute top-4 right-4 bg-accent text-white p-2 rounded-full">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path></svg>
                         </div>
@@ -80,7 +80,7 @@ include 'includes/header.php';
                 <!-- Card 3: Metálicos -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition-shadow duration-300">
                     <div class="h-48 bg-gray-200 relative overflow-hidden">
-                        <img src="assets/img/GL-METAL-SEAL.avif" alt="Sellos Metálicos" class="w-full h-full object-contain p-4">
+                        <img src="assets/img/sello-metalico-gl-iso17712-alta-seguridad.avif" alt="Sellos Metálicos" class="w-full h-full object-contain p-4">
                         <div class="absolute top-4 right-4 bg-accent text-white p-2 rounded-full">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path></svg>
                         </div>
@@ -101,7 +101,7 @@ include 'includes/header.php';
     <!-- Trust Section -->
     <section class="py-16 bg-industrial border-t border-gray-300">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
                 <!-- Item 1 -->
                 <div class="flex flex-col items-center p-6">
                     <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md mb-4 text-accent">
@@ -117,14 +117,6 @@ include 'includes/header.php';
                     </div>
                     <h4 class="text-lg font-bold text-primary">Cumplimiento C-TPAT</h4>
                     <p class="text-gray-500 text-sm mt-2">Seguridad garantizada para tus exportaciones a EE.UU.</p>
-                </div>
-                <!-- Item 3 -->
-                <div class="flex flex-col items-center p-6">
-                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md mb-4 text-accent">
-                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
-                    </div>
-                    <h4 class="text-lg font-bold text-primary">Normativa BASC</h4>
-                    <p class="text-gray-500 text-sm mt-2">Comprometidos con un comercio seguro y libre de ilícitos.</p>
                 </div>
             </div>
         </div>

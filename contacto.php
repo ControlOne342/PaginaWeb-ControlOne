@@ -94,29 +94,24 @@ include 'includes/header.php';
                                 <span>Av Lago de Guadalupe km 27.5-Bodega A3, San Pedro Barrientos, 54010 Tlalnepantla, Méx.</span>
                             </li>
                             <li class="flex items-center">
-                                <svg class="w-6 h-6 text-accent mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                                <span>+52 55 5864 2200</span>
+                                <a href="tel:+525558642200" class="text-accent hover:text-primary transition-colors">
+                                    <svg class="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                </a>
+                                <a href="tel:+525558642200" class="hover:text-primary transition-colors">+52 55 5864 2200</a>
                             </li>
                             <li class="flex items-center">
-                                <svg class="w-6 h-6 text-accent mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                                <a href="mailto:ventas@controlone.com" class="hover:text-primary transition-colors">socialmedia@controlone.com.mx</a>
+                                <a href="mailto:socialmedia@controlone.com.mx" class="text-accent hover:text-primary transition-colors">
+                                    <svg class="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                </a>
+                                <a href="mailto:socialmedia@controlone.com.mx" class="hover:text-primary transition-colors">socialmedia@controlone.com.mx</a>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Map -->
                     <div class="bg-white p-2 rounded-lg shadow-md h-64 overflow-hidden">
-    <iframe 
-        width="100%" 
-        height="100%" 
-        frameborder="0" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://maps.google.com/maps?q=Av+Lago+de+Guadalupe+km+27.5-Bodega+A3,+San+Pedro+Barrientos,+54010+Tlalnepantla,+M%C3%A9x.&t=&z=15&ie=UTF8&iwloc=&output=embed">
-    </iframe>
-</div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.8326278203527!2d-99.20917677151544!3d19.57928689885347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21d90a5615a3d%3A0xb4bb76ff7e6d870b!2sControl%20One%20Platform!5e1!3m2!1ses-419!2smx!4v1763742336943!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
 
             </div>
