@@ -106,17 +106,8 @@ include 'includes/header.php';
 
                     <!-- Map -->
                     <div class="bg-white p-2 rounded-lg shadow-md h-64 overflow-hidden">
-    <iframe 
-        width="100%" 
-        height="100%" 
-        frameborder="0" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://maps.google.com/maps?q=Av+Lago+de+Guadalupe+km+27.5-Bodega+A3,+San+Pedro+Barrientos,+54010+Tlalnepantla,+M%C3%A9x.&t=&z=15&ie=UTF8&iwloc=&output=embed">
-    </iframe>
-</div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.8326278203527!2d-99.20917677151544!3d19.57928689885347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21d90a5615a3d%3A0xb4bb76ff7e6d870b!2sControl%20One%20Platform!5e1!3m2!1ses-419!2smx!4v1763742336943!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
 
             </div>
