@@ -50,7 +50,7 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
     				<a href="index.php" class="hover:opacity-90 transition-opacity">
-        			<img src="assets/img/Logo-CO.avif" alt="Control One Logo" class="h-10 w-auto">
+        			<img src="assets/img/logo-control-one-industrial.avif" alt="Control One Logo" class="h-10 w-auto">
     			</a>
 				</div>
 
