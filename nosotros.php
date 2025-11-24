@@ -7,7 +7,7 @@ include 'includes/header.php';
     <!-- Hero Section -->
     <section class="relative bg-primary h-[400px] flex items-center justify-center text-center">
         <div class="absolute inset-0 z-0">
-            <img src="assets/img/contenedor-.webp" alt="Oficinas Control One" class="w-full h-full object-cover opacity-30">
+            <img src="assets/img/contenedores.avif" alt="Oficinas Control One" class="w-full h-full object-cover opacity-30">
             <div class="absolute inset-0 bg-primary/80 mix-blend-multiply"></div>
         </div>
         <div class="relative z-10 container mx-auto px-4">
@@ -37,7 +37,7 @@ include 'includes/header.php';
                 <!-- Image Content -->
                 <div class="lg:w-1/2">
                     <div class="relative rounded-lg shadow-xl overflow-hidden">
-                        <img src="https://picsum.photos/800/600?random=5" alt="Equipo Control One" class="w-full h-full object-cover">
+                        <img src="assets/img/historia.avif" alt="Equipo Control One" class="w-full h-full object-cover">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
                             <p class="text-white font-semibold">Compromiso y Tecnología en cada sello.</p>
                         </div>
@@ -54,7 +54,7 @@ include 'includes/header.php';
                 <h2 class="text-3xl font-bold text-primary">Certificaciones y Cumplimiento</h2>
                 <p class="text-gray-600 mt-2">Operamos bajo los más estrictos estándares internacionales.</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center max-w-4xl mx-auto">
                 <!-- Item 1 -->
                 <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm">
                     <div class="w-16 h-16 bg-industrial rounded-full flex items-center justify-center mb-4 text-accent">
@@ -71,14 +71,7 @@ include 'includes/header.php';
                     <h4 class="text-lg font-bold text-primary">C-TPAT</h4>
                     <p class="text-gray-500 text-sm mt-2">Cumplimiento total para exportaciones seguras.</p>
                 </div>
-                <!-- Item 3 -->
-                <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm">
-                    <div class="w-16 h-16 bg-industrial rounded-full flex items-center justify-center mb-4 text-accent">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
-                    </div>
-                    <h4 class="text-lg font-bold text-primary">BASC</h4>
-                    <p class="text-gray-500 text-sm mt-2">Alianza empresarial para un comercio seguro.</p>
-                </div>
+
             </div>
         </div>
     </section>
