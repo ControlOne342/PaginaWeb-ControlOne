@@ -15,7 +15,7 @@ include 'includes/header.php';
             <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Nuestros Productos Más Vendidos</h1>
             <p class="text-xl text-gray-200 max-w-3xl mx-auto mb-10">Soluciones de seguridad probadas y certificadas para proteger tus activos más valiosos en cada eslabón de la cadena de suministro.</p>
             
-            <a href="assets/pdf/Cátalogo.pdf" target="_blank" class="inline-flex items-center bg-accent hover:bg-orange-500 text-white px-8 py-4 rounded-md font-bold text-lg transition-all transform hover:-translate-y-1 shadow-lg group">
+            <a href="assets/pdf/Catalogo.pdf" target="_blank" class="inline-flex items-center bg-accent hover:bg-orange-500 text-white px-8 py-4 rounded-md font-bold text-lg transition-all transform hover:-translate-y-1 shadow-lg group">
                 <svg class="w-6 h-6 mr-3 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                 Descargar Catálogo Técnico (PDF)
             </a>
