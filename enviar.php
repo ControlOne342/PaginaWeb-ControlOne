@@ -1,96 +1,94 @@
 <?php
-/**
- * Script de procesamiento de formulario de contacto para Control One.
- * Maneja la sanitización, validación y envío de correos.
- */
+// enviar.php - Script de envío seguro para Control One
 
-// Configuración
-$destinatario = "ventas@controlone.com"; // Correo de destino
-$remitente_sistema = "noreply@controlone.com"; // Debe ser un correo válido del dominio
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
 
-// Verificar método de solicitud
+// 1. CARGAR LAS LIBRERÍAS
+require 'librerias/PHPMailer-master/src/Exception.php';
+require 'librerias/PHPMailer-master/src/PHPMailer.php';
+require 'librerias/PHPMailer-master/src/SMTP.php';
+
+// Verificar si el formulario fue enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    // 1. Sanitización y Validación de Entradas
-    $nombre = filter_input(INPUT_POST, 'nombre', FILTER_SANITIZE_STRING);
-    $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-    $telefono = filter_input(INPUT_POST, 'telefono', FILTER_SANITIZE_STRING);
-    $empresa = filter_input(INPUT_POST, 'empresa', FILTER_SANITIZE_STRING);
-    $volumen = filter_input(INPUT_POST, 'volumen', FILTER_SANITIZE_STRING);
-    $mensaje = filter_input(INPUT_POST, 'mensaje', FILTER_SANITIZE_STRING);
+    // 2. RECIBIR DATOS DEL FORMULARIO
+    $nombre   = strip_tags(trim($_POST["nombre"]));
+    $email    = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $telefono = strip_tags(trim($_POST["telefono"]));
+    $empresa  = strip_tags(trim($_POST["empresa"]));
+    $volumen  = strip_tags(trim($_POST["volumen"])); 
+    $mensaje  = strip_tags(trim($_POST["mensaje"]));
 
-    // Validar campos obligatorios
-    if (empty($nombre) || empty($email) || empty($mensaje) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        // Redirigir con error si faltan datos o email inválido
-        header("Location: contacto.php?status=error&msg=invalid_input");
-        exit;
-    }
+    // Traducción del volumen
+    $volumen_texto = $volumen;
+    if($volumen == 'menos_1000') $volumen_texto = "Menos de 1,000 piezas";
+    if($volumen == '1000_5000')  $volumen_texto = "1,000 - 5,000 piezas";
+    if($volumen == '5000_10000') $volumen_texto = "5,000 - 10,000 piezas";
+    if($volumen == 'mas_10000')  $volumen_texto = "Más de 10,000 piezas";
 
-    // 2. Construcción del Correo
-    $asunto = "Nuevo Lead Web - " . ($empresa ? $empresa : $nombre);
+    // Iniciar PHPMailer
+    $mail = new PHPMailer(true);
 
-    $cuerpo = "
-    <html>
-    <head>
-        <title>Nuevo Lead desde Sitio Web</title>
-    </head>
-    <body>
-        <h2 style='color: #0B2239;'>Nuevo Mensaje de Contacto</h2>
-        <p>Se ha recibido una nueva solicitud de cotización o información desde el sitio web.</p>
+    try {
+        // 3. CONFIGURACIÓN DEL SERVIDOR (HostGator)
+        $mail->isSMTP();
+        $mail->Host       = 'mail.controlone.com.mx'; 
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'socialmedia@controlone.com.mx'; 
         
-        <table style='border-collapse: collapse; width: 100%; max-width: 600px;'>
-            <tr style='background-color: #f4f6f8;'>
-                <td style='padding: 10px; font-weight: bold; border-bottom: 1px solid #ddd;'>Nombre:</td>
-                <td style='padding: 10px; border-bottom: 1px solid #ddd;'>$nombre</td>
-            </tr>
-            <tr>
-                <td style='padding: 10px; font-weight: bold; border-bottom: 1px solid #ddd;'>Email:</td>
-                <td style='padding: 10px; border-bottom: 1px solid #ddd;'>$email</td>
-            </tr>
-            <tr style='background-color: #f4f6f8;'>
-                <td style='padding: 10px; font-weight: bold; border-bottom: 1px solid #ddd;'>Teléfono:</td>
-                <td style='padding: 10px; border-bottom: 1px solid #ddd;'>$telefono</td>
-            </tr>
-            <tr>
-                <td style='padding: 10px; font-weight: bold; border-bottom: 1px solid #ddd;'>Empresa:</td>
-                <td style='padding: 10px; border-bottom: 1px solid #ddd;'>$empresa</td>
-            </tr>
-            <tr style='background-color: #f4f6f8;'>
-                <td style='padding: 10px; font-weight: bold; border-bottom: 1px solid #ddd;'>Volumen Estimado:</td>
-                <td style='padding: 10px; border-bottom: 1px solid #ddd;'>$volumen</td>
-            </tr>
-            <tr>
-                <td style='padding: 10px; font-weight: bold; border-bottom: 1px solid #ddd;'>Mensaje:</td>
-                <td style='padding: 10px; border-bottom: 1px solid #ddd;'>$mensaje</td>
-            </tr>
-        </table>
+        // OJO: Uso comillas dobles aquí por los caracteres especiales de tu clave
+        $mail->Password   = "K'>Ec)/(P]Dl4@p";            
         
-        <p style='font-size: 12px; color: #777; margin-top: 20px;'>Este correo fue enviado automáticamente desde el formulario de contacto de Control One.</p>
-    </body>
-    </html>
-    ";
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;     
+        $mail->Port       = 465;                             
 
-    // 3. Headers para evitar SPAM y formato HTML
-    $headers = "MIME-Version: 1.0" . "\r\n";
-    $headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
-    $headers .= "From: Control One Web <$remitente_sistema>" . "\r\n";
-    $headers .= "Reply-To: $email" . "\r\n";
-    $headers .= "X-Mailer: PHP/" . phpversion();
+        // 4. DESTINATARIOS
+        $mail->setFrom('socialmedia@controlone.com.mx', 'Web Control One'); 
+        
+        // AQUÍ PON EL CORREO DONDE QUIERES RECIBIR LOS LEADS (Puede ser el mismo)
+        $mail->addAddress('socialmedia@controlone.com.mx', 'Ventas Control One'); 
+        
+        $mail->addReplyTo($email, $nombre); 
 
-    // 4. Envío del correo
-    $envio = mail($destinatario, $asunto, $cuerpo, $headers);
+        // 5. CONTENIDO DEL CORREO
+        $mail->isHTML(true);
+        $mail->CharSet = 'UTF-8';
+        $mail->Subject = '🔥 Lead Web: ' . ($empresa ? $empresa : $nombre);
+        
+        $mail->Body    = "
+            <div style='font-family: Arial, sans-serif; color: #333; border: 1px solid #ddd; padding: 20px; border-radius: 5px;'>
+                <h2 style='color: #0B2239; border-bottom: 2px solid #F5A623; padding-bottom: 10px; margin-top: 0;'>Nueva Solicitud de Cotización</h2>
+                <p>Detalles del prospecto capturado:</p>
+                <table width='100%' style='border-collapse: collapse;'>
+                    <tr><td style='padding: 8px; font-weight:bold; width: 150px;'>Nombre:</td><td>$nombre</td></tr>
+                    <tr><td style='padding: 8px; font-weight:bold; background:#f9f9f9;'>Empresa:</td><td style='background:#f9f9f9;'>$empresa</td></tr>
+                    <tr><td style='padding: 8px; font-weight:bold;'>Correo:</td><td><a href='mailto:$email' style='color:#F5A623;'>$email</a></td></tr>
+                    <tr><td style='padding: 8px; font-weight:bold; background:#f9f9f9;'>Teléfono:</td><td style='background:#f9f9f9;'>$telefono</td></tr>
+                    <tr><td style='padding: 8px; font-weight:bold;'>Volumen:</td><td style='color: #d35400; font-weight:bold;'>$volumen_texto</td></tr>
+                </table>
+                <div style='margin-top: 20px; background: #f4f6f8; padding: 15px; border-radius: 5px;'>
+                    <strong>Mensaje / Requerimiento:</strong><br>
+                    $mensaje
+                </div>
+                <p style='font-size: 12px; color: #999; margin-top: 20px; text-align: center;'>Enviado desde ControlOne.com.mx</p>
+            </div>
+        ";
 
-    // 5. Redirección según resultado
-    if ($envio) {
+        $mail->send();
+        
+        // Éxito
         header("Location: contacto.php?status=success");
-    } else {
-        header("Location: contacto.php?status=error&msg=server_error");
-    }
-    exit;
+        exit();
 
+    } catch (Exception $e) {
+        // Error
+        header("Location: contacto.php?status=error");
+        exit();
+    }
 } else {
-    // Acceso directo al script no permitido
     header("Location: contacto.php");
-    exit;
+    exit();
 }
 ?>
