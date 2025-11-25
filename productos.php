@@ -8,7 +8,7 @@ include 'includes/header.php';
     <section class="relative bg-primary h-[500px] flex items-center justify-center text-center">
         <div class="absolute inset-0 z-0">
             <!-- Placeholder image for warehouse/logistics background -->
-            <img src="https://picsum.photos/1920/600?grayscale&blur=2" alt="Almacén Logístico" class="w-full h-full object-cover opacity-30">
+            <img src="assets/img/bodega-control-one-sellos-seguridad.avif" alt="Almacén Logístico" class="w-full h-full object-cover opacity-30">
             <div class="absolute inset-0 bg-primary/80 mix-blend-multiply"></div>
         </div>
         <div class="relative z-10 container mx-auto px-4">
