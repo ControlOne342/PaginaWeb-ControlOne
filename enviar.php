@@ -1,5 +1,5 @@
 <?php
-// enviar.php - CONFIGURACIÓN GMAIL (INFALIBLE)
+// enviar.php - BLINDADO CONTRA SPAM + CONFIGURACIÓN GMAIL
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -10,6 +10,27 @@ require 'librerias/PHPMailer-master/src/PHPMailer.php';
 require 'librerias/PHPMailer-master/src/SMTP.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    // --- 1. CAPA DE SEGURIDAD (HONEYPOT) ---
+    // Verificamos si el bot llenó el campo trampa 'website_check'
+    // Este campo debe existir en tu contact.php (como lo hicimos en el paso anterior)
+    if (!empty($_POST['website_check'])) {
+        // Es un bot. Detenemos la ejecución silenciosamente.
+        die(); 
+    }
+
+    // --- 2. CAPA DE SEGURIDAD (LINK SPAM) ---
+    // Verificamos si el mensaje contiene enlaces http o https
+    // El ataque que sufriste enviaba muchos links. Esto lo detiene.
+    $mensaje_raw = $_POST["mensaje"];
+    if (strpos($mensaje_raw, 'http://') !== false || strpos($mensaje_raw, 'https://') !== false) {
+        // Redirigimos con error o mostramos mensaje y matamos el proceso
+        // Esto evita que tu correo se sature
+        header("Location: contacto?status=error");
+        die();
+    }
+
+    // --- PROCESAMIENTO NORMAL ---
 
     // Sanitización
     $nombre   = strip_tags(trim($_POST["nombre"]));
@@ -42,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         // Gmail usa TLS en el puerto 587
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;     
-        $mail->Port       = 587;                             
+        $mail->Port       = 587;                              
 
         // --- DESTINATARIOS ---
         // Gmail exige que el "From" sea tu misma cuenta
@@ -77,7 +98,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         ";
 
         $mail->send();
-        header("Location: contacto.php?status=success");
+        header("Location: contacto?status=success");
         exit();
 
     } catch (Exception $e) {
@@ -87,7 +108,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 } else {
-    header("Location: contacto.php");
+    header("Location: contacto");
     exit();
 }
 ?>

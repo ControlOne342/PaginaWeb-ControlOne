@@ -20,7 +20,6 @@ include 'includes/header.php';
         </div>
     <?php endif; ?>
 
-    <!-- Hero Section (Short) -->
     <section class="bg-primary py-16 text-center">
         <div class="container mx-auto px-4">
             <h1 class="text-3xl md:text-4xl font-bold text-white mb-2">Contáctanos</h1>
@@ -28,15 +27,19 @@ include 'includes/header.php';
         </div>
     </section>
 
-    <!-- Contact Content -->
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row gap-12">
                 
-                <!-- Left Column: Form (Wide) -->
                 <div class="lg:w-2/3 bg-white p-8 rounded-lg shadow-lg">
                     <h2 class="text-2xl font-bold text-primary mb-6">Envíanos un Mensaje</h2>
-                    <form action="enviar.php" method="POST" class="space-y-6">
+                    
+                    <form action="enviar" method="POST" class="space-y-6">
+                        
+                        <div style="opacity: 0; position: absolute; top: 0; left: 0; height: 0; width: 0; z-index: -1;">
+                            <label for="website_check">Si eres humano no llenes este campo:</label>
+                            <input type="text" id="website_check" name="website_check" autocomplete="off" tabindex="-1">
+                        </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label for="nombre" class="block text-sm font-medium text-gray-700 mb-1">Nombre Completo</label>
@@ -83,9 +86,7 @@ include 'includes/header.php';
                     </form>
                 </div>
 
-                <!-- Right Column: Info (Narrow) -->
                 <div class="lg:w-1/3 space-y-8">
-                    <!-- Contact Info -->
                     <div class="bg-white p-6 rounded-lg shadow-md">
                         <h3 class="text-xl font-bold text-primary mb-4">Información de Contacto</h3>
                         <ul class="space-y-4 text-gray-600">
@@ -108,7 +109,6 @@ include 'includes/header.php';
                         </ul>
                     </div>
 
-                    <!-- Map -->
                     <div class="bg-white p-2 rounded-lg shadow-md h-96 overflow-hidden">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.8326278203527!2d-99.20917677151544!3d19.57928689885347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21d90a5615a3d%3A0xb4bb76ff7e6d870b!2sControl%20One%20Platform!5e1!3m2!1ses-419!2smx!4v1763742336943!5m2!1ses-419!2smx" class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>

@@ -8,7 +8,7 @@ include 'includes/header.php';
     <section class="relative bg-primary h-[500px] flex items-center justify-center text-center">
         <div class="absolute inset-0 z-0">
             <!-- Placeholder image for warehouse/logistics background -->
-            <img src="https://picsum.photos/1920/600?grayscale&blur=2" alt="Almacén Logístico" class="w-full h-full object-cover opacity-30">
+            <img src="assets/img/bodega-control-one-sellos-seguridad.avif" alt="Almacén Logístico" class="w-full h-full object-cover opacity-30">
             <div class="absolute inset-0 bg-primary/80 mix-blend-multiply"></div>
         </div>
         <div class="relative z-10 container mx-auto px-4">
@@ -53,7 +53,7 @@ include 'includes/header.php';
                             </ul>
                         </div>
 
-                        <a href="contacto.php?producto=star-one-seal" class="mt-auto block w-full text-center bg-primary hover:bg-blue-900 text-white py-3 rounded-md font-semibold transition-colors">
+                        <a href="contacto?producto=star-one-seal" class="mt-auto block w-full text-center bg-primary hover:bg-blue-900 text-white py-3 rounded-md font-semibold transition-colors">
                             Cotizar Ahora
                         </a>
                     </div>
@@ -78,7 +78,7 @@ include 'includes/header.php';
                             </ul>
                         </div>
 
-                        <a href="contacto.php?producto=c-one-316" class="mt-auto block w-full text-center bg-primary hover:bg-blue-900 text-white py-3 rounded-md font-semibold transition-colors">
+                        <a href="contacto?producto=c-one-316" class="mt-auto block w-full text-center bg-primary hover:bg-blue-900 text-white py-3 rounded-md font-semibold transition-colors">
                             Cotizar Ahora
                         </a>
                     </div>
@@ -110,7 +110,7 @@ include 'includes/header.php';
                             <span class="text-sm font-semibold text-gray-500 uppercase">Especificaciones:</span>
                             <p class="text-gray-700">Cable 1.8 mm | Resistencia > 306 kgF</p>
                         </div>
-                        <a href="contacto.php?producto=c-one-x6" class="text-accent font-bold hover:text-orange-600 flex items-center">
+                        <a href="contacto?producto=c-one-x6" class="text-accent font-bold hover:text-orange-600 flex items-center">
                             Solicitar Cotización <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
                     </div>
@@ -127,7 +127,7 @@ include 'includes/header.php';
                             <span class="text-sm font-semibold text-gray-500 uppercase">Especificaciones:</span>
                             <p class="text-gray-700">Cable 1/16" (1.58 mm) | Resistencia > 210 kgF</p>
                         </div>
-                        <a href="contacto.php?producto=c-one-116" class="text-accent font-bold hover:text-orange-600 flex items-center">
+                        <a href="contacto?producto=c-one-116" class="text-accent font-bold hover:text-orange-600 flex items-center">
                             Solicitar Cotización <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
                     </div>
@@ -153,7 +153,7 @@ include 'includes/header.php';
                     <h3 class="text-lg font-bold text-primary mb-2">Quantum 12</h3>
                     <p class="text-sm text-gray-500 mb-4">El estándar de la industria.</p>
                     <span class="inline-block bg-blue-100 text-primary text-xs font-bold px-2 py-1 rounded mb-4">Inserto Metálico</span>
-                    <a href="contacto.php?producto=quantum-12" class="block w-full border border-primary text-primary hover:bg-primary hover:text-white py-2 rounded transition-colors font-medium">Cotizar</a>
+                    <a href="contacto?producto=quantum-12" class="block w-full border border-primary text-primary hover:bg-primary hover:text-white py-2 rounded transition-colors font-medium">Cotizar</a>
                 </div>
 
                 <!-- Producto B: Quantum R12 -->
@@ -165,7 +165,7 @@ include 'includes/header.php';
                     <h3 class="text-lg font-bold text-primary mb-2">Quantum R12</h3>
                     <p class="text-sm text-gray-500 mb-4">Mayor resistencia a la tracción.</p>
                     <span class="inline-block bg-blue-100 text-primary text-xs font-bold px-2 py-1 rounded mb-4">Alta Tracción</span>
-                    <a href="contacto.php?producto=quantum-r12" class="block w-full border border-primary text-primary hover:bg-primary hover:text-white py-2 rounded transition-colors font-medium">Cotizar</a>
+                    <a href="contacto?producto=quantum-r12" class="block w-full border border-primary text-primary hover:bg-primary hover:text-white py-2 rounded transition-colors font-medium">Cotizar</a>
                 </div>
 
                 <!-- Producto C: Quantum R18 -->
@@ -176,7 +176,7 @@ include 'includes/header.php';
                     <h3 class="text-lg font-bold text-primary mb-2">Quantum R18</h3>
                     <p class="text-sm text-gray-500 mb-4">Longitud extendida para aplicaciones especiales.</p>
                     <span class="inline-block bg-blue-100 text-primary text-xs font-bold px-2 py-1 rounded mb-4">Largo: 45cm</span>
-                    <a href="contacto.php?producto=quantum-r18" class="block w-full border border-primary text-primary hover:bg-primary hover:text-white py-2 rounded transition-colors font-medium">Cotizar</a>
+                    <a href="contacto?producto=quantum-r18" class="block w-full border border-primary text-primary hover:bg-primary hover:text-white py-2 rounded transition-colors font-medium">Cotizar</a>
                 </div>
             </div>
         </div>
@@ -197,7 +197,7 @@ include 'includes/header.php';
                         <li class="flex items-center"><svg class="w-5 h-5 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Sistema de agarre "Spikes" para tela</li>
                         <li class="flex items-center"><svg class="w-5 h-5 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Ideal para bolsas de dinero y valijas</li>
                     </ul>
-                    <a href="contacto.php?producto=c-cash" class="inline-block bg-white text-primary hover:bg-gray-100 px-8 py-3 rounded-md font-bold transition-colors">
+                    <a href="contacto?producto=c-cash" class="inline-block bg-white text-primary hover:bg-gray-100 px-8 py-3 rounded-md font-bold transition-colors">
                         Cotizar C-CASH
                     </a>
                 </div>
