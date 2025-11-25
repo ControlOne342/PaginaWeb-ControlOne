@@ -22,10 +22,10 @@ include 'includes/header.php';
                 Garantiza la integridad de tu cadena de suministro con soluciones certificadas C-TPAT e ISO 17712.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="contacto.php" class="bg-accent hover:bg-orange-500 text-white px-8 py-4 rounded-md font-bold text-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                <a href="contacto" class="bg-accent hover:bg-orange-500 text-white px-8 py-4 rounded-md font-bold text-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                     Cotizar Ahora
                 </a>
-                <a href="productos.php" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-md font-bold text-lg transition-all">
+                <a href="productos" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-md font-bold text-lg transition-all">
                     Ver Catálogo
                 </a>
             </div>
@@ -52,7 +52,7 @@ include 'includes/header.php';
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-primary mb-2">Alta Seguridad (ISO 17712)</h3>
                         <p class="text-gray-600 mb-4 text-sm">Sellos de perno y cable acerado para contenedores y transporte internacional.</p>
-                        <a href="productos.php#alta-seguridad" class="text-accent font-semibold hover:text-orange-600 inline-flex items-center">
+                        <a href="productos#alta-seguridad" class="text-accent font-semibold hover:text-orange-600 inline-flex items-center">
                             Ver Detalles
                             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                         </a>
@@ -70,7 +70,7 @@ include 'includes/header.php';
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-primary mb-2">Sellos Indicativos</h3>
                         <p class="text-gray-600 mb-4 text-sm">Sellos de plástico ajustables para control de inventario, botiquines y valijas.</p>
-                        <a href="productos.php#plasticos" class="text-accent font-semibold hover:text-orange-600 inline-flex items-center">
+                        <a href="productos#plasticos" class="text-accent font-semibold hover:text-orange-600 inline-flex items-center">
                             Ver Detalles
                             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                         </a>
@@ -88,7 +88,7 @@ include 'includes/header.php';
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-primary mb-2">Sellos Metálicos</h3>
                         <p class="text-gray-600 mb-4 text-sm">Soluciones robustas de banda metálica para camiones y vagones de ferrocarril.</p>
-                        <a href="productos.php#metalicos" class="text-accent font-semibold hover:text-orange-600 inline-flex items-center">
+                        <a href="productos#metalicos" class="text-accent font-semibold hover:text-orange-600 inline-flex items-center">
                             Ver Detalles
                             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                         </a>
@@ -127,7 +127,7 @@ include 'includes/header.php';
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">¿Necesitas cotizar por volumen?</h2>
             <p class="text-gray-300 mb-8 max-w-2xl mx-auto text-lg">Obtén precios preferenciales para pedidos mayoristas. Nuestro equipo comercial está listo para asesorarte.</p>
-            <a href="contacto.php" class="inline-block bg-accent hover:bg-orange-500 text-white px-10 py-4 rounded-md font-bold text-xl shadow-lg transition-colors">
+            <a href="contacto" class="inline-block bg-accent hover:bg-orange-500 text-white px-10 py-4 rounded-md font-bold text-xl shadow-lg transition-colors">
                 Solicitar Cotización
             </a>
         </div>

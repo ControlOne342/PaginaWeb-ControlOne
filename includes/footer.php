@@ -5,7 +5,7 @@
                 
                 <!-- Col 1: Marca -->
                 <div class="space-y-4">
-                    <a href="index.php" class="inline-block mb-2">
+                    <a href="/" class="inline-block mb-2">
     					<img src="assets/img/logo-control-one-industrial.avif" alt="Control One" class="h-12 w-auto">
 					</a>
                     <p class="text-gray-300 text-sm leading-relaxed">
@@ -29,10 +29,10 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-6 text-accent">Soluciones</h4>
                     <ul class="space-y-3 text-sm">
-                        <li><a href="productos.php#alta-seguridad" class="text-gray-300 hover:text-white transition-colors">Sellos de Alta Seguridad</a></li>
-                        <li><a href="productos.php#plasticos" class="text-gray-300 hover:text-white transition-colors">Sellos de Plástico</a></li>
-                        <li><a href="productos.php#metalicos" class="text-gray-300 hover:text-white transition-colors">Sellos Metálicos</a></li>
-                        <li><a href="productos.php#cables" class="text-gray-300 hover:text-white transition-colors">Sellos de Cable</a></li>
+                        <li><a href="productos#alta-seguridad" class="text-gray-300 hover:text-white transition-colors">Sellos de Alta Seguridad</a></li>
+                        <li><a href="productos#plasticos" class="text-gray-300 hover:text-white transition-colors">Sellos de Plástico</a></li>
+                        <li><a href="productos#metalicos" class="text-gray-300 hover:text-white transition-colors">Sellos Metálicos</a></li>
+                        <li><a href="productos#cables" class="text-gray-300 hover:text-white transition-colors">Sellos de Cable</a></li>
                     </ul>
                 </div>
 
@@ -40,8 +40,8 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-6 text-accent">Empresa</h4>
                     <ul class="space-y-3 text-sm">
-                        <li><a href="nosotros.php" class="text-gray-300 hover:text-white transition-colors">Nosotros</a></li>
-                        <li><a href="contacto.php" class="text-gray-300 hover:text-white transition-colors">Contacto</a></li>
+                        <li><a href="nosotros" class="text-gray-300 hover:text-white transition-colors">Nosotros</a></li>
+                        <li><a href="contacto" class="text-gray-300 hover:text-white transition-colors">Contacto</a></li>
                         <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Aviso de Privacidad</a></li>
                         <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Términos y Condiciones</a></li>
                     </ul>
