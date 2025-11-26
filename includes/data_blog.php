@@ -13,7 +13,6 @@ $blog_posts = [
         'autor'    => 'Equipo Control One',
         'fecha'    => '2025-11-26',
         'categoria'=> 'Guías Técnicas',
-        // Usamos una imagen que ya tienes en tu servidor para empezar
         'imagen'   => 'assets/img/sello-seguridad-star-one-indicativo.avif', 
         'extracto' => '¿Sabes la diferencia entre un sello indicativo y uno de alta seguridad? Descubre cómo evitar robos hormiga y cumplir con la normativa C-TPAT / ISO 17712.',
         'contenido'=> '
@@ -26,12 +25,12 @@ $blog_posts = [
             <ul class="list-disc pl-6 mb-6 space-y-2">
                 <li><strong>Indicativos (I):</strong> De plástico o metal ligero. Su función es mostrar evidencia visual de manipulación (Tamper-Evident). Ideales para botiquines, cajas plásticas o inventarios.</li>
                 <li><strong>Seguridad (S):</strong> Resistencia media. Para envíos nacionales que no requieren alta seguridad.</li>
-                <li><strong>Alta Seguridad (H):</strong> Obligatorios para cruces fronterizos y C-TPAT. Deben resistir pruebas de impacto, corte y tensión. Ejemplo: Nuestro <em>Star One Seal</em>.</li>
+                <li><strong>Alta Seguridad (H):</strong> Obligatorios para cruces fronterizos y C-TPAT. Deben resistir pruebas de impacto, corte y tensión. Ejemplo: Nuestro <a href="productos#alta-seguridad" class="text-accent hover:underline font-bold" title="Ver Sello de Alta Seguridad">Star One Seal</a>.</li>
             </ul>
 
             <h2 class="text-2xl font-bold text-primary mt-8 mb-4">2. ¿Cuándo usar sellos de Cable?</h2>
             <p class="mb-4">
-                Los sellos de cable ajustable, como el <strong>C-ONE 316</strong>, son la opción más versátil. Se recomiendan cuando los cerrojos del contenedor o camión están desalineados o tienen formas irregulares donde un sello de perno (clavo) no entraría.
+                Los sellos de cable ajustable, como el <a href="productos#cables" class="text-accent hover:underline font-bold" title="Ver Sello de Cable">C-ONE 316</a>, son la opción más versátil. Se recomiendan cuando los cerrojos del contenedor o camión están desalineados o tienen formas irregulares donde un sello de perno (clavo) no entraría.
             </p>
 
             <div class="bg-blue-50 border-l-4 border-accent p-4 my-6">
@@ -41,7 +40,7 @@ $blog_posts = [
 
             <h2 class="text-2xl font-bold text-primary mt-8 mb-4">Conclusión</h2>
             <p class="mb-4">
-                Para exportación, no te arriesgues: usa Alta Seguridad (H). Para logística interna, un sello indicativo de calidad puede ser suficiente. En <strong>Control One</strong> te asesoramos para blindar tu cadena de suministro.
+                Para exportación, no te arriesgues: usa Alta Seguridad (H). Para logística interna, un sello indicativo de calidad puede ser suficiente. En <a href="/" class="text-primary hover:underline font-bold">Control One</a> te asesoramos para blindar tu cadena de suministro.
             </p>
         '
     ],
@@ -60,7 +59,7 @@ $blog_posts = [
 
             <h2 class="text-2xl font-bold text-primary mt-8 mb-4">El Protocolo "Tirón Seco" (Pull Check)</h2>
             <p class="mb-4">
-                Al colocar un sello de cable ajustable como el <strong>C-ONE 316</strong>, el error más común es dejar el cable flojo. Sigue estos pasos:
+                Al colocar un sello de cable ajustable como el <a href="productos#cables" class="text-accent hover:underline font-bold" title="Ver detalles del C-ONE 316">C-ONE 316</a>, el error más común es dejar el cable flojo. Sigue estos pasos:
             </p>
             
             <ol class="list-decimal pl-6 mb-6 space-y-4 text-gray-700">
@@ -76,10 +75,9 @@ $blog_posts = [
 
             <h2 class="text-2xl font-bold text-primary mt-8 mb-4">Registro Fotográfico</h2>
             <p class="mb-4">
-                La seguridad no termina al cerrar el sello. Debes tomar una fotografía clara donde sea legible el <strong>folio único</strong> grabado en láser. En <em>Control One</em>, nuestros sellos C-ONE incluyen numeración irrepetible para garantizar la trazabilidad.
+                La seguridad no termina al cerrar el sello. Debes tomar una fotografía clara donde sea legible el <strong>folio único</strong> grabado en láser. En <a href="/" class="text-primary hover:underline font-bold">Control One</a>, nuestros sellos C-ONE incluyen numeración irrepetible para garantizar la trazabilidad.
             </p>
         '
     ],
-    // Aquí puedes agregar el siguiente artículo en el futuro...
 ];
 ?>
