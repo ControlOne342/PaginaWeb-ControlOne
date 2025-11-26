@@ -46,6 +46,40 @@ $blog_posts = [
         '
     ],
 
+    'como-colocar-sello-seguridad-correctamente' => [
+        'titulo'   => 'Cómo colocar un Sello de Seguridad correctamente (Guía Paso a Paso)',
+        'autor'    => 'Equipo Control One',
+        'fecha'    => '2025-11-27',
+        'categoria'=> 'Tutoriales',
+        'imagen'   => 'assets/img/sello-tipo-cable-c-one316.avif',
+        'extracto' => 'Un sello mal colocado es un sello inútil. Aprende la técnica correcta para instalar precintos de cable y evitar manipulaciones no detectadas.',
+        'contenido'=> '
+            <p class="lead text-xl text-gray-600 mb-6 font-medium">
+                El 80% de las violaciones de seguridad ocurren por una mala aplicación del precinto. No basta con "ponerlo", hay que asegurarlo.
+            </p>
+
+            <h2 class="text-2xl font-bold text-primary mt-8 mb-4">El Protocolo "Tirón Seco" (Pull Check)</h2>
+            <p class="mb-4">
+                Al colocar un sello de cable ajustable como el <strong>C-ONE 316</strong>, el error más común es dejar el cable flojo. Sigue estos pasos:
+            </p>
+            
+            <ol class="list-decimal pl-6 mb-6 space-y-4 text-gray-700">
+                <li><strong>Inserta:</strong> Pasa la punta del cable a través del mecanismo de cierre de las puertas del contenedor.</li>
+                <li><strong>Ajusta:</strong> Introduce la punta en el cuerpo del sello y jala hasta que quede lo más ajustado posible. No dejes "juego" o espacio sobrante.</li>
+                <li><strong>Verifica (Vital):</strong> Una vez cerrado, da un tirón fuerte y seco al cuerpo del sello hacia abajo. Esto confirma que el mecanismo interno ha mordido el cable correctamente.</li>
+            </ol>
+
+            <div class="bg-red-50 border-l-4 border-red-500 p-4 my-6">
+                <p class="font-bold text-red-700">¡Cuidado!</p>
+                <p class="text-sm">Nunca cortes el cable sobrante a menos que sea estrictamente necesario por normativa. El cable sobrante dificulta que los ladrones manipulen el mecanismo de cierre.</p>
+            </div>
+
+            <h2 class="text-2xl font-bold text-primary mt-8 mb-4">Registro Fotográfico</h2>
+            <p class="mb-4">
+                La seguridad no termina al cerrar el sello. Debes tomar una fotografía clara donde sea legible el <strong>folio único</strong> grabado en láser. En <em>Control One</em>, nuestros sellos C-ONE incluyen numeración irrepetible para garantizar la trazabilidad.
+            </p>
+        '
+    ],
     // Aquí puedes agregar el siguiente artículo en el futuro...
 ];
 ?>

@@ -7,7 +7,7 @@ include 'includes/header.php';
     <!-- Hero Section -->
     <section class="relative bg-primary h-[400px] flex items-center justify-center text-center">
         <div class="absolute inset-0 z-0">
-            <img src="assets/img/contenedores.avif" alt="Oficinas Control One" class="w-full h-full object-cover opacity-30">
+            <img src="assets/img/bodega-control-one-sellos-seguridad.avif" alt="Oficinas Control One" class="w-full h-full object-cover opacity-30">
             <div class="absolute inset-0 bg-primary/80 mix-blend-multiply"></div>
         </div>
         <div class="relative z-10 container mx-auto px-4">
