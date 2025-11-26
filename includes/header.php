@@ -50,6 +50,7 @@
         }
     </style>
 </head>
+<base href="https://controlone.com.mx/">
 <body class="bg-industrial text-dark flex flex-col min-h-screen">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK5H5DD2"
