@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WK5H5DD2');</script>
-    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L71JSWZBLN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-L71JSWZBLN');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://<?php echo $_SERVER['HTTP_HOST'] . parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH); ?>">
@@ -50,11 +57,10 @@
         }
     </style>
 </head>
+<base href="https://controlone.com.mx/">
 <body class="bg-industrial text-dark flex flex-col min-h-screen">
-    <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK5H5DD2"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
@@ -69,6 +75,7 @@
                     <a href="/" class="text-dark hover:text-primary font-medium transition-colors duration-200">Inicio</a>
                     <a href="nosotros" class="text-dark hover:text-primary font-medium transition-colors duration-200">Nosotros</a>
                     <a href="productos" class="text-dark hover:text-primary font-medium transition-colors duration-200">Productos</a>
+                    <a href="blog" class="text-dark hover:text-primary font-medium transition-colors duration-200">Blog</a>
                     <a href="contacto" class="text-dark hover:text-primary font-medium transition-colors duration-200">Contacto</a>
                 </div>
 
@@ -98,6 +105,7 @@
                 <a href="/" class="block px-3 py-2 rounded-md text-base font-medium text-dark hover:text-primary hover:bg-gray-50 transition-colors">Inicio</a>
                 <a href="nosotros" class="block px-3 py-2 rounded-md text-base font-medium text-dark hover:text-primary hover:bg-gray-50 transition-colors">Nosotros</a>
                 <a href="productos" class="block px-3 py-2 rounded-md text-base font-medium text-dark hover:text-primary hover:bg-gray-50 transition-colors">Productos</a>
+                <a href="blog" class="block px-3 py-2 rounded-md text-base font-medium text-dark hover:text-primary hover:bg-gray-50 transition-colors">Blog</a>
                 <a href="contacto" class="block px-3 py-2 rounded-md text-base font-medium text-dark hover:text-primary hover:bg-gray-50 transition-colors">Contacto</a>
             </div>
             <div class="pt-4 pb-4 border-t border-gray-200 px-4">

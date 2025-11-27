@@ -20,7 +20,13 @@ RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 # 2. FORZAR HTTPS (Seguridad - Arregla el error de SE Ranking)
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# --- REGLAS DEL BLOG (AGREGAR ESTO) ---
+# Redirigir /blog a blog.php
+RewriteRule ^blog/?$ blog.php [L]
 
+# Redirigir /post/nombre-articulo a post.php?slug=nombre-articulo
+RewriteRule ^post/([a-zA-Z0-9-]+)$ post.php?slug=$1 [L,QSA]
+# --------------------------------------
 # 3. URLS LIMPIAS (Quitar el .php)
 # Convierte controlone.com.mx/contacto.php en /contacto
 RewriteCond %{REQUEST_FILENAME} !-d
