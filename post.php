@@ -1,5 +1,5 @@
 <?php 
-/* post.php - El lector de artículos OPTIMIZADO */
+/* post.php - El lector de artículos OPTIMIZADO PARA SEO */
 
 include 'includes/data_blog.php'; 
 
@@ -10,12 +10,15 @@ if (array_key_exists($slug, $blog_posts)) {
     
     // --- VARIABLES SEO PARA EL HEADER ---
     $page_title = $post['titulo']; 
-    // Usamos la meta_description si existe, si no, usamos el extracto
+    
+    // Usamos la meta_description si existe en la base de datos, si no, usamos el extracto como respaldo
     $meta_description = isset($post['meta_description']) ? $post['meta_description'] : $post['extracto'];
-    $page_image = $post['imagen']; // Para que salga en WhatsApp
+    
+    // Imagen para Open Graph (WhatsApp/Facebook)
+    $page_image = $post['imagen']; 
     
 } else {
-    // Redirección 404 amigable
+    // Redirección 404 amigable si el artículo no existe
     header("HTTP/1.0 404 Not Found");
     header("Location: /blog");
     exit();
@@ -27,15 +30,18 @@ include 'includes/header.php';
 <main class="bg-white">
     <section class="relative bg-primary py-20 min-h-[350px] flex items-center justify-center">
         <div class="absolute inset-0 z-0 overflow-hidden">
-             <img src="/<?php echo $post['imagen']; ?>" alt="<?php echo $post['titulo']; ?>" class="w-full h-full object-cover opacity-20 blur-sm">
+             <img src="/<?php echo $post['imagen']; ?>" alt="Fondo" class="w-full h-full object-cover opacity-20 blur-sm">
         </div>
+        
         <div class="container mx-auto px-4 max-w-4xl text-center relative z-10">
             <div class="inline-block bg-accent text-white text-xs md:text-sm font-bold px-3 py-1 rounded-full mb-4">
                 <?php echo isset($post['categoria']) ? $post['categoria'] : 'Blog'; ?>
             </div>
+            
             <h1 class="text-3xl md:text-5xl font-bold text-white leading-tight mb-6 shadow-text">
                 <?php echo $post['titulo']; ?>
             </h1>
+            
             <div class="flex items-center justify-center text-gray-300 text-sm space-x-4">
                 <span class="flex items-center">
                     <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
@@ -55,7 +61,7 @@ include 'includes/header.php';
                 <img src="/<?php echo $post['imagen']; ?>" alt="<?php echo $post['titulo']; ?> - Control One" class="w-full h-auto object-cover" width="800" height="450">
             </div>
             
-            <article class="prose prose-lg text-gray-700 leading-relaxed max-w-none">
+            <article class="prose prose-lg text-gray-700 leading-relaxed max-w-none space-y-6">
                 <?php echo $post['contenido']; ?>
             </article>
 
