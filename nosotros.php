@@ -1,5 +1,6 @@
 <?php 
-$page_title = "Nosotros";
+$page_title = "Nosotros | Control One";
+$meta_description = "Conoce a Control One, expertos en soluciones de seguridad para la cadena de suministro con más de 10 años protegiendo activos en México.";
 include 'includes/header.php'; 
 ?>
 

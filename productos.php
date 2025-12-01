@@ -1,5 +1,6 @@
 <?php 
-$page_title = "Productos";
+$page_title = "Catálogo de Sellos de Seguridad y Precintos";
+$meta_description = "Catálogo completo de sellos de alta seguridad: botella (clavo), cable de acero, indicativos de plástico y metálicos. Cumplimiento C-TPAT y Norma ISO 17712.";
 include 'includes/header.php'; 
 ?>
 
