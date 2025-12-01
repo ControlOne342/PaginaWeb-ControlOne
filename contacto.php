@@ -1,5 +1,6 @@
 <?php 
-$page_title = "Contacto";
+$page_title = "Contacto y Cotizaciones";
+$meta_description = "Contacta a nuestros asesores expertos. Solicita cotización de sellos de seguridad por volumen. Atención inmediata vía WhatsApp y correo.";
 include 'includes/header.php'; 
 ?>
 

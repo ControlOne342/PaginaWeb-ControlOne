@@ -1,7 +1,8 @@
 <?php 
-$page_title = "Inicio";
+$page_title = "Fabricantes de Sellos de Seguridad ISO 17712";
+$meta_description = "Líderes en México en fabricación de sellos de seguridad, precintos C-TPAT, sellos de cable y botella para transporte de carga. Envíos inmediatos.";
 include 'includes/header.php'; 
-include 'includes/data_blog.php'; // Carga los artículos del blog
+include 'includes/data_blog.php'; 
 ?>
 
 <main>

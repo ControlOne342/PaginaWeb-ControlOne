@@ -1,5 +1,6 @@
 <?php 
-$page_title = "Blog de Seguridad Logística";
+$page_title = "Blog de Logística y Normativa C-TPAT";
+$meta_description = "Artículos técnicos, guías de uso y noticias sobre seguridad logística, prevención de robo de carga y normativas internacionales de exportación.";
 include 'includes/header.php'; 
 include 'includes/data_blog.php'; 
 ?>
