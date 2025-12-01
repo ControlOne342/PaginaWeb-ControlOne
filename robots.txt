@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Bloquear archivos del sistema para seguridad
+Disallow: /includes/
+Disallow: /librerias/
+Disallow: /error_log
+
+# Indicar la ubicación del mapa del sitio
+Sitemap: https://controlone.com.mx/sitemap.xml
