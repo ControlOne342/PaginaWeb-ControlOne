@@ -6,6 +6,14 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WK5H5DD2');</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L71JSWZBLN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L71JSWZBLN');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -28,6 +36,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -48,7 +57,9 @@
     </script>
     <style>body { font-family: 'Inter', sans-serif; }</style>
 </head>
+
 <base href="https://controlone.com.mx/">
+
 <body class="bg-industrial text-dark flex flex-col min-h-screen">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK5H5DD2"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -58,8 +69,8 @@
                 
                 <div class="flex-shrink-0 flex items-center">
                     <a href="/" class="hover:opacity-90 transition-opacity">
-                    <img src="assets/img/logo-control-one-industrial.avif" alt="Control One Logo" class="h-10 w-auto">
-                </a>
+                        <img src="assets/img/logo-control-one-industrial.avif" alt="Control One Logo" class="h-10 w-auto">
+                    </a>
                 </div>
 
                 <div class="hidden md:flex space-x-8 items-center">
@@ -108,7 +119,7 @@
     </header>
 
     <script>
-        // Lógica simple para el menú móvil
+        // Lógica para el menú móvil
         document.addEventListener('DOMContentLoaded', () => {
             const btn = document.getElementById('mobile-menu-btn');
             const menu = document.getElementById('mobile-menu');
