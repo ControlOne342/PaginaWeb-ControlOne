@@ -6,41 +6,38 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WK5H5DD2');</script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L71JSWZBLN"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-L71JSWZBLN');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="canonical" href="https://<?php echo $_SERVER['HTTP_HOST'] . parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH); ?>">
-    <title><?php echo isset($page_title) ? $page_title . ' | Control One' : 'Control One - Sellos de Seguridad'; ?></title>
-    <meta name="description" content="Fabricantes de sellos de seguridad de alta calidad para logística y transporte.">
+    
+    <title><?php echo isset($page_title) ? $page_title . ' | Control One' : 'Control One - Sellos de Seguridad ISO 17712'; ?></title>
+    
+    <meta name="description" content="<?php echo isset($meta_description) ? $meta_description : 'Fabricantes de sellos de seguridad de alta calidad, certificados ISO 17712 y C-TPAT. Envíos a todo México para logística y transporte.'; ?>">
     
     <link rel="icon" href="assets/img/icon.png" type="image/png">
     <link rel="shortcut icon" href="assets/img/icon.png" type="image/png">
     <link rel="apple-touch-icon" href="assets/img/icon.png">
 
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>">
+    <meta property="og:title" content="<?php echo isset($page_title) ? $page_title : 'Control One - Seguridad Logística'; ?>">
+    <meta property="og:description" content="<?php echo isset($meta_description) ? $meta_description : 'Soluciones de seguridad certificadas para tu cadena de suministro.'; ?>">
+    <meta property="og:image" content="<?php echo isset($page_image) ? 'https://controlone.com.mx/' . $page_image : 'https://controlone.com.mx/assets/img/logo-control-one-industrial.avif'; ?>">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
-
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#0B2239', // Azul Oxford Oscuro
-                        accent: '#F5A623',  // Naranja Seguridad
-                        industrial: '#F4F6F8', // Gris Industrial Claro
-                        dark: '#333333',    // Gris Oscuro Texto
+                        primary: '#0B2239', 
+                        accent: '#F5A623',  
+                        industrial: '#F4F6F8', 
+                        dark: '#333333',    
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -49,13 +46,7 @@
             }
         }
     </script>
-    
-    <style>
-        /* Estilos base adicionales si son necesarios */
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+    <style>body { font-family: 'Inter', sans-serif; }</style>
 </head>
 <base href="https://controlone.com.mx/">
 <body class="bg-industrial text-dark flex flex-col min-h-screen">

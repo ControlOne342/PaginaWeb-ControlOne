@@ -1,16 +1,18 @@
 <?php
-// includes/data_blog.php - BASE DE DATOS DE ARTÍCULOS (V5 - FINAL SIN EVIDENCIA)
+// includes/data_blog.php - BASE DE DATOS DE ARTÍCULOS (OPTIMIZADA PARA SEO)
 
 $blog_posts = [
     // 1. GUÍA GENERAL
     'guia-2025-que-precinto-seguridad-elegir' => [
-        'titulo'   => 'Guía 2025: ¿Qué Precinto de Seguridad elegir para tu carga?',
-        'autor'    => 'Equipo Control One',
-        'fecha'    => '2025-11-26',
-        'categoria'=> 'Guías Técnicas',
-        'imagen'   => 'assets/img/bodega-control-one-sellos-seguridad.avif', 
-        'extracto' => 'No todos los sellos son iguales. Aprende a elegir entre precintos indicativos, de cable y de alta seguridad ISO 17712 para evitar robos y cumplir con aduanas.',
-        'contenido'=> '
+        'titulo'           => 'Guía 2025: ¿Qué Precinto de Seguridad elegir para tu carga?',
+        // SEO: Meta descripción añadida
+        'meta_description' => '¿Dudas entre sellos de plástico, cable o botella? Aprende a elegir el precinto correcto según la norma ISO 17712 y evita robos en tu carga.',
+        'autor'            => 'Equipo Control One',
+        'fecha'            => '2025-11-26',
+        'categoria'        => 'Guías Técnicas',
+        'imagen'           => 'assets/img/sellos.avif', 
+        'extracto'         => 'No todos los sellos son iguales. Aprende a elegir entre precintos indicativos, de cable y de alta seguridad ISO 17712 para evitar robos y cumplir con aduanas.',
+        'contenido'        => '
             <p class="lead text-xl text-gray-600 mb-6 font-medium">
                 La seguridad logística no admite errores. Elegir el <strong>precinto de seguridad</strong> incorrecto puede costarle a tu empresa miles de dólares en mercancía robada, contaminación de carga o rechazos en aduanas internacionales.
             </p>
@@ -75,15 +77,17 @@ $blog_posts = [
         '
     ],
 
-    // 2. TUTORIAL CABLE (Corregido - Sin registro fotográfico)
+    // 2. TUTORIAL CABLE
     'como-colocar-sello-seguridad-cable-correctamente' => [
-        'titulo'   => 'Cómo colocar un Sello de Cable Ajustable correctamente (Guía Técnica)',
-        'autor'    => 'Ingeniería Control One',
-        'fecha'    => '2025-11-27',
-        'categoria'=> 'Tutoriales',
-        'imagen'   => 'assets/img/sello-tipo-cable-c-one316.avif',
-        'extracto' => 'Un sello de cable mal ajustado es un riesgo de seguridad. Aprende la técnica del "Tirón Seco" y cómo evitar la manipulación en válvulas y puertas.',
-        'contenido'=> '
+        'titulo'           => 'Cómo colocar un Sello de Cable Ajustable correctamente (Guía Técnica)',
+        // SEO: Meta descripción añadida
+        'meta_description' => 'Un sello de cable mal puesto es un riesgo. Tutorial paso a paso para colocar precintos ajustables con la técnica del Tirón Seco y evitar manipulaciones.',
+        'autor'            => 'Ingeniería Control One',
+        'fecha'            => '2025-11-27',
+        'categoria'        => 'Tutoriales',
+        'imagen'           => 'assets/img/sello-tipo-cable-con-fondo.avif',
+        'extracto'         => 'Un sello de cable mal ajustado es un riesgo de seguridad. Aprende la técnica del "Tirón Seco" y cómo evitar la manipulación en válvulas y puertas.',
+        'contenido'        => '
             <p class="lead text-xl text-gray-600 mb-6 font-medium">
                 Los sellos de cable son los "todo terreno" de la seguridad, pero su flexibilidad puede ser su debilidad si no se instalan con rigor técnico.
             </p>
@@ -127,13 +131,15 @@ $blog_posts = [
 
     // 3. CAMIONES
     'sellos-seguridad-para-camiones-transporte' => [
-        'titulo'   => 'Los Mejores Sellos de Seguridad para Camiones y Transporte Terrestre',
-        'autor'    => 'Equipo Control One',
-        'fecha'    => '2025-11-27',
-        'categoria'=> 'Logística Terrestre',
-        'imagen'   => 'assets/img/vista-trasera-camion.avif',
-        'extracto' => '¿Torton, Rabón o Caja Seca? Descubre qué sello necesitas para cada tipo de camión y evita el robo hormiga en carreteras nacionales.',
-        'contenido'=> '
+        'titulo'           => 'Los Mejores Sellos de Seguridad para Camiones y Transporte Terrestre',
+        // SEO: Meta descripción añadida
+        'meta_description' => '¿Torton, Rabón o Caja Seca? Descubre qué sellos de seguridad (metal, cable o plástico) necesitas para evitar el robo hormiga en carreteras de México.',
+        'autor'            => 'Equipo Control One',
+        'fecha'            => '2025-11-27',
+        'categoria'        => 'Logística Terrestre',
+        'imagen'           => 'assets/img/vista-trasera-camion.avif',
+        'extracto'         => '¿Torton, Rabón o Caja Seca? Descubre qué sello necesitas para cada tipo de camión y evita el robo hormiga en carreteras nacionales.',
+        'contenido'        => '
             <p class="lead text-xl text-gray-600 mb-6 font-medium">
                 El transporte terrestre en México enfrenta retos únicos: vibración extrema, intentos de robo en paradas no autorizadas y manipulación de puertas. Un candado normal no basta.
             </p>
@@ -175,13 +181,15 @@ $blog_posts = [
 
     // 4. TUTORIAL CLAVO
     'como-aplicar-sello-botella-clavo-contenedor' => [
-        'titulo'   => 'Cómo aplicar un Sello de Clavo (Botella) en un Contenedor para C-TPAT',
-        'autor'    => 'Ingeniería Control One',
-        'fecha'    => '2025-11-27',
-        'categoria'=> 'Normatividad',
-        'imagen'   => 'assets/img/apicacion-sello-tipo-clavo.avif',
-        'extracto' => 'La correcta aplicación del sello de perno es vital para evitar el rechazo en aduana. Aprende a escuchar el "Click" de seguridad y verificar el mecanismo Anti-Spin.',
-        'contenido'=> '
+        'titulo'           => 'Cómo aplicar un Sello de Clavo (Botella) en un Contenedor para C-TPAT',
+        // SEO: Meta descripción añadida
+        'meta_description' => 'Evita multas en aduana. Aprende el proceso VVTT (View, Verify, Tug, Twist) para colocar sellos de botella ISO 17712 en contenedores de exportación.',
+        'autor'            => 'Ingeniería Control One',
+        'fecha'            => '2025-11-27',
+        'categoria'        => 'Normatividad',
+        'imagen'           => 'assets/img/apicacion-sello-tipo-clavo.avif',
+        'extracto'         => 'La correcta aplicación del sello de perno es vital para evitar el rechazo en aduana. Aprende a escuchar el "Click" de seguridad y verificar el mecanismo Anti-Spin.',
+        'contenido'        => '
             <p class="lead text-xl text-gray-600 mb-6 font-medium">
                 Los sellos de botella (Bolt Seals) son la primera línea de defensa en el comercio internacional. Una mala colocación no solo arriesga la carga, sino que puede causar multas en aduana.
             </p>
@@ -216,13 +224,15 @@ $blog_posts = [
 
     // 5. NORMATIVA ISO 17712 (NUEVO)
     'norma-iso-17712-c-tpat-explicada' => [
-        'titulo'   => 'Todo lo que debes saber de la Norma ISO 17712 y C-TPAT',
-        'autor'    => 'Control One Certificaciones',
-        'fecha'    => '2025-11-27',
-        'categoria'=> 'Normatividad',
-        'imagen'   => 'assets/img/sello-seguridad-star-one-indicativo.avif',
-        'extracto' => '¿Tu carga puede ser rechazada en la frontera? Entiende las 3 clasificaciones de la norma ISO 17712:2013 y por qué el sello "H" es obligatorio para exportar.',
-        'contenido'=> '
+        'titulo'           => 'Todo lo que debes saber de la Norma ISO 17712 y C-TPAT',
+        // SEO: Meta descripción añadida
+        'meta_description' => '¿Qué es un sello "H"? Explicación sencilla de la norma ISO 17712:2013 y los requisitos C-TPAT obligatorios para exportar carga a Estados Unidos.',
+        'autor'            => 'Control One Certificaciones',
+        'fecha'            => '2025-11-27',
+        'categoria'        => 'Normatividad',
+        'imagen'           => 'assets/img/bodega-control-one-sellos-seguridad.avif',
+        'extracto'         => '¿Tu carga puede ser rechazada en la frontera? Entiende las 3 clasificaciones de la norma ISO 17712:2013 y por qué el sello "H" es obligatorio para exportar.',
+        'contenido'        => '
             <p class="lead text-xl text-gray-600 mb-6 font-medium">
                 En el comercio internacional, un sello de seguridad no es un accesorio, es un requisito legal. La norma <strong>ISO 17712:2013</strong> establece los estándares físicos que deben cumplir los precintos para ser considerados seguros.
             </p>
@@ -268,13 +278,15 @@ $blog_posts = [
     ],
     // ARTÍCULO 6: VÁLVULAS Y PIPAS (Nicho Rentable - 320 Búsquedas)
     'sellos-seguridad-valvulas-pipas-gas' => [
-        'titulo'   => 'Seguridad en Válvulas: ¿Cómo evitar el robo hormiga en Pipas y Tanques?',
-        'autor'    => 'Ingeniería Control One',
-        'fecha'    => '2025-12-01',
-        'categoria'=> 'Logística de Fluidos',
-        'imagen'   => 'assets/img/sello-tipo-cable-c-one116.avif', // Usamos el cable delgado
-        'extracto' => 'El robo de combustible y químicos comienza en la válvula. Descubre qué sellos de seguridad caben en orificios pequeños y resisten la intemperie.',
-        'contenido'=> '
+        'titulo'           => 'Seguridad en Válvulas: ¿Cómo evitar el robo hormiga en Pipas y Tanques?',
+        // SEO: Meta descripción añadida
+        'meta_description' => 'El robo de combustible empieza en la válvula. Conoce los sellos de cable delgado (1/16") diseñados para asegurar pipas, domos y tanques de químicos.',
+        'autor'            => 'Ingeniería Control One',
+        'fecha'            => '2025-12-01',
+        'categoria'        => 'Logística de Fluidos',
+        'imagen'           => 'assets/img/sello-tipo-cable-aplicacion.avif', // Usamos el cable delgado
+        'extracto'         => 'El robo de combustible y químicos comienza en la válvula. Descubre qué sellos de seguridad caben en orificios pequeños y resisten la intemperie.',
+        'contenido'        => '
             <p class="lead text-xl text-gray-600 mb-6 font-medium">
                 A diferencia de un contenedor, una pipa tiene múltiples puntos de vulnerabilidad: válvulas de descarga, domos superiores y cajas de herramientas. Un candado estándar no sirve aquí.
             </p>
