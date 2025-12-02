@@ -43,7 +43,7 @@
                         <li><a href="/nosotros" class="text-gray-300 hover:text-white transition-colors">Nosotros</a></li>
                         <li><a href="/contacto" class="text-gray-300 hover:text-white transition-colors">Contacto</a></li>
                         <li><a href="/aviso-privacidad" class="text-gray-300 hover:text-white transition-colors">Aviso de Privacidad</a></li>
-                        <li><a href="/terminos-y-condiciones" class="text-gray-300 hover:text-white transition-colors">Términos y Condiciones</a></li>
+                        <li><a href="/terminos-condiciones" class="text-gray-300 hover:text-white transition-colors">Términos y Condiciones</a></li>
                     </ul>
                 </div>
 

@@ -18,9 +18,13 @@ if (array_key_exists($slug, $blog_posts)) {
     $page_image = $post['imagen']; 
     
 } else {
-    // Redirección 404 amigable si el artículo no existe
+    // Devolvemos un 404 real para que Google sepa que la página no existe
     header("HTTP/1.0 404 Not Found");
-    header("Location: /blog");
+    // Opcional: Incluir tu header/footer para mostrar un mensaje bonito de "No encontrado"
+    $page_title = "Página no encontrada";
+    include 'includes/header.php';
+    echo '<main class="container mx-auto py-20 text-center"><h1 class="text-4xl font-bold text-primary">Error 404</h1><p class="mt-4">El artículo que buscas no existe.</p><a href="/blog" class="mt-6 inline-block bg-accent text-white px-6 py-2 rounded">Volver al Blog</a></main>';
+    include 'includes/footer.php';
     exit();
 }
 
