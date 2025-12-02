@@ -322,5 +322,104 @@ $blog_posts = [
             </div>
         '
     ],
+    // 7. ROBO HORMIGA Y CINTILLOS (Para atacar la keyword "Cintillos de seguridad")
+    'cintillos-seguridad-evitar-robo-hormiga' => [
+        'titulo'           => 'Cintillos de Seguridad: La solución económica contra el Robo Hormiga',
+        'meta_description' => '¿Pierdes mercancía en trayectos cortos? Descubre cómo los cintillos de seguridad foliados y cinchos de plástico evitan el robo hormiga en cajas y camionetas.',
+        'autor'            => 'Equipo Control One',
+        'fecha'            => '2025-12-03',
+        'categoria'        => 'Prevención de Pérdidas',
+        'imagen'           => 'assets/img/auditoria-sellos-de-seguridad.avif', // Usamos la foto del Quantum amarillo
+        'extracto'         => 'El robo hormiga representa el 30% de las pérdidas logísticas. Aprende a usar cintillos de seguridad foliados para blindar cajas de herramientas, botiquines y transporte retail.',
+        'contenido'        => '
+            <p class="lead text-xl text-gray-600 mb-6 font-medium">
+                No todo el riesgo está en la carretera. A veces, el enemigo está en casa. El "robo hormiga" (pequeñas sustracciones continuas) sangra las utilidades de las empresas de logística y retail.
+            </p>
+
+            <h2 class="text-2xl font-bold text-primary mt-8 mb-4">¿Qué es un Cintillo de Seguridad?</h2>
+            <p class="mb-4">
+                A diferencia de un cincho de ferretería común que cualquiera puede comprar y reemplazar, un <strong>cintillo de seguridad</strong> (como nuestro modelo <a href="/productos#plasticos" class="text-accent hover:underline font-bold">Quantum</a>) cuenta con un <strong>folio único e irrepetible</strong> grabado con láser.
+            </p>
+            <p class="mb-4">
+                Si un operador corta el cintillo para sustraer un producto, no podrá reemplazarlo por uno igual, dejando evidencia inmediata del delito.
+            </p>
+
+            <h2 class="text-2xl font-bold text-primary mt-8 mb-4">3 Usos Críticos en tu Operación</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                <div class="bg-gray-50 p-4 rounded border-l-4 border-accent">
+                    <h4 class="font-bold text-primary">1. Cajas de Herramientas</h4>
+                    <p class="text-sm text-gray-600">Asegura que el kit del camión esté completo al regreso del viaje.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded border-l-4 border-accent">
+                    <h4 class="font-bold text-primary">2. Botiquines y Extintores</h4>
+                    <p class="text-sm text-gray-600">Garantiza que el equipo de emergencia no haya sido manipulado antes de una inspección.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded border-l-4 border-accent">
+                    <h4 class="font-bold text-primary">3. Camionetas de Reparto</h4>
+                    <p class="text-sm text-gray-600">Sella las puertas traseras en cada parada para evitar "pérdidas" durante la ruta de entrega.</p>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-bold text-primary mt-8 mb-4">La Regla de Oro: "Sello Roto, Sello Reportado"</h2>
+            <p class="mb-4">
+                Implementar cintillos no sirve de nada sin un protocolo. El chofer debe verificar que el número de folio coincida con su hoja de salida. Si llega con el cintillo roto o sin él, se debe iniciar una auditoría inmediata.
+            </p>
+        '
+    ],
+
+    // 8. ETIQUETAS DE SEGURIDAD (Nuevo Nicho: Paquetería y Cajas)
+    'etiquetas-seguridad-void-cajas-carton' => [
+        'titulo'           => 'Etiquetas de Seguridad VOID: ¿Cómo proteger cajas de cartón y sobres?',
+        'meta_description' => 'Para lo que no se puede cerrar con candado. Conoce las etiquetas de seguridad VOID (Total Transfer) que dejan evidencia irreversible al despegarse de cajas y sobres.',
+        'autor'            => 'Tecnología Control One',
+        'fecha'            => '2025-12-04',
+        'categoria'        => 'Seguridad en Empaque',
+        'imagen'           => 'assets/img/violacion-de-cinta-secure-label.avif', // Usaremos una genérica o placeholder por ahora
+        'extracto'         => '¿Cómo aseguras una caja de cartón o un sobre confidencial? Las etiquetas VOID son la respuesta. Al intentar despegarse, revelan un mensaje oculto imposible de borrar.',
+        'contenido'        => '
+            <p class="lead text-xl text-gray-600 mb-6 font-medium">
+                No toda la carga viaja en contenedores. El comercio electrónico y la paquetería mueven millones de cajas de cartón diariamente. Aquí, un sello de cable no sirve; necesitas una <strong>etiqueta de alta seguridad</strong>.
+            </p>
+
+            <h2 class="text-2xl font-bold text-primary mt-8 mb-4">¿Cómo funciona la tecnología VOID?</h2>
+            <p class="mb-4">
+                Parece una cinta adhesiva normal, pero es una trampa visual. Nuestras etiquetas <strong>Secure Label</strong> cuentan con un adhesivo de doble capa.
+            </p>
+            <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+                <li><strong>Estado Normal:</strong> Se ve como una etiqueta de color sólido (rojo, azul) con tu folio o logo.</li>
+                <li><strong>Al intentar despegar:</strong> La etiqueta se "delamina". Parte del adhesivo se queda pegado en la caja formando la palabra <strong>"OPEN / VIOLADO"</strong> y la etiqueta queda inutilizada (no pega de nuevo).</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold text-primary mt-8 mb-4">Tipos de Transferencia según tu Necesidad</h2>
+            <p class="mb-4">
+                Es crucial elegir el tipo correcto para no dañar tus activos:
+            </p>
+            
+            <div class="space-y-4 mb-8">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 h-6 w-6 rounded-full bg-red-500 flex items-center justify-center text-white text-xs font-bold mt-1">A</div>
+                    <div class="ml-4">
+                        <h4 class="font-bold text-gray-800">Total Transfer (Transferencia Total)</h4>
+                        <p class="text-sm text-gray-600"><strong>Uso:</strong> Cajas de cartón, sobres de papel, playo (stretch film).</p>
+                        <p class="text-sm text-gray-600">Deja un residuo pegajoso y muy evidente en la superficie. Es la máxima evidencia de violación.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-500 flex items-center justify-center text-white text-xs font-bold mt-1">B</div>
+                    <div class="ml-4">
+                        <h4 class="font-bold text-gray-800">No Transfer (Sin Residuo)</h4>
+                        <p class="text-sm text-gray-600"><strong>Uso:</strong> Puertas de vehículos, cristales, urnas, escotillas de aviones, laptops.</p>
+                        <p class="text-sm text-gray-600">Al despegarse, la etiqueta muestra el mensaje "VOID" en sí misma, pero <strong>NO ensucia la superficie</strong>. Ideal para puertas que se abren y cierran a diario.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 p-6 bg-industrial rounded-lg text-center border border-gray-200">
+                <h3 class="font-bold text-primary mb-2">Personaliza tu Seguridad</h3>
+                <p class="text-gray-600 mb-4 text-sm">Podemos imprimir tu logo, código de barras y folios consecutivos en rollos de 500 o 1,000 etiquetas.</p>
+                <a href="/contacto" class="text-accent font-bold hover:text-orange-600">Solicitar Cotización de Etiquetas &rarr;</a>
+            </div>
+        '
+    ],
 ];
 ?>
