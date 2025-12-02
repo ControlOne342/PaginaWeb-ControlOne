@@ -29,10 +29,10 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-6 text-accent">Soluciones</h4>
                     <ul class="space-y-3 text-sm">
-                        <li><a href="productos#alta-seguridad" class="text-gray-300 hover:text-white transition-colors">Sellos de Alta Seguridad</a></li>
-                        <li><a href="productos#plasticos" class="text-gray-300 hover:text-white transition-colors">Sellos de Plástico</a></li>
-                        <li><a href="productos#metalicos" class="text-gray-300 hover:text-white transition-colors">Sellos Metálicos</a></li>
-                        <li><a href="productos#cables" class="text-gray-300 hover:text-white transition-colors">Sellos de Cable</a></li>
+                        <li><a href="/productos#alta-seguridad" class="text-gray-300 hover:text-white transition-colors">Sellos de Alta Seguridad</a></li>
+                        <li><a href="/productos#plasticos" class="text-gray-300 hover:text-white transition-colors">Sellos de Plástico</a></li>
+                        <li><a href="/productos#metalicos" class="text-gray-300 hover:text-white transition-colors">Sellos Metálicos</a></li>
+                        <li><a href="/productos#cables" class="text-gray-300 hover:text-white transition-colors">Sellos de Cable</a></li>
                     </ul>
                 </div>
 
@@ -40,10 +40,10 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-6 text-accent">Empresa</h4>
                     <ul class="space-y-3 text-sm">
-                        <li><a href="nosotros" class="text-gray-300 hover:text-white transition-colors">Nosotros</a></li>
-                        <li><a href="contacto" class="text-gray-300 hover:text-white transition-colors">Contacto</a></li>
-                        <li><a href="aviso-privacidad" class="text-gray-300 hover:text-white transition-colors">Aviso de Privacidad</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Términos y Condiciones</a></li>
+                        <li><a href="/nosotros" class="text-gray-300 hover:text-white transition-colors">Nosotros</a></li>
+                        <li><a href="/contacto" class="text-gray-300 hover:text-white transition-colors">Contacto</a></li>
+                        <li><a href="/aviso-privacidad" class="text-gray-300 hover:text-white transition-colors">Aviso de Privacidad</a></li>
+                        <li><a href="/terminos-y-condiciones" class="text-gray-300 hover:text-white transition-colors">Términos y Condiciones</a></li>
                     </ul>
                 </div>
 
