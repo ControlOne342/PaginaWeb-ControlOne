@@ -5,10 +5,8 @@ include 'includes/header.php';
 ?>
 
 <main>
-    <!-- Hero Section -->
     <section class="relative bg-primary h-[500px] flex items-center justify-center text-center">
         <div class="absolute inset-0 z-0">
-            <!-- Placeholder image for warehouse/logistics background -->
             <img src="assets/img/bodega-control-one-sellos-seguridad.avif" alt="Almacén Logístico" class="w-full h-full object-cover opacity-30">
             <div class="absolute inset-0 bg-primary/80 mix-blend-multiply"></div>
         </div>
@@ -23,7 +21,6 @@ include 'includes/header.php';
         </div>
     </section>
 
-    <!-- SECCIÓN 1: ALTA SEGURIDAD (ISO 17712) -->
     <section id="alta-seguridad" class="py-20 bg-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center mb-12">
@@ -35,10 +32,9 @@ include 'includes/header.php';
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <!-- Producto A: Star One Seal -->
                 <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col hover:shadow-2xl transition-all duration-300 group">
                     <div class="h-72 bg-gray-100 relative overflow-hidden">
-                        <img src="assets/img/sello-seguridad-star-one-indicativo.avif" alt="Star One Seal" class="w-full h-full object-contain p-8 group-hover:scale-105 transition-transform duration-500">
+                        <img src="assets/img/sello-seguridad-star-one-indicativo.avif" alt="Star One Seal" class="w-full h-full object-contain p-8 group-hover:scale-105 transition-transform duration-500" loading="lazy">
                         <div class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Exportación</div>
                     </div>
                     <div class="p-8 flex-grow flex flex-col">
@@ -60,10 +56,9 @@ include 'includes/header.php';
                     </div>
                 </div>
 
-                <!-- Producto B: C-ONE 316 -->
                 <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col hover:shadow-2xl transition-all duration-300 group">
                     <div class="h-72 bg-gray-100 relative overflow-hidden">
-                        <img src="assets/img/sello-tipo-cable-c-one316.avif" alt="C-ONE 316" class="w-full h-full object-contain p-8 group-hover:scale-105 transition-transform duration-500">
+                        <img src="assets/img/sello-tipo-cable-c-one316.avif" alt="C-ONE 316" class="w-full h-full object-contain p-8 group-hover:scale-105 transition-transform duration-500" loading="lazy">
                         <div class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Cable Robusto</div>
                     </div>
                     <div class="p-8 flex-grow flex flex-col">
@@ -88,7 +83,6 @@ include 'includes/header.php';
         </div>
     </section>
 
-    <!-- SECCIÓN 2: CABLES DE ACERO (Logística Terrestre) -->
     <section id="cables-acero" class="py-20 bg-industrial border-t border-gray-200">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center mb-12">
@@ -100,10 +94,9 @@ include 'includes/header.php';
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <!-- Producto A: C-ONE X6 -->
                 <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                     <div class="md:w-1/3 bg-gray-200 relative">
-                         <img src="assets/img/sello-tipo-cable-c-onex6.avif" alt="C-ONE X6" class="w-full h-full object-contain p-4">
+                         <img src="assets/img/sello-tipo-cable-c-onex6.avif" alt="C-ONE X6" class="w-full h-full object-contain p-4" loading="lazy">
                     </div>
                     <div class="p-6 md:w-2/3 flex flex-col justify-center">
                         <h3 class="text-xl font-bold text-primary mb-2">C-ONE X6</h3>
@@ -117,10 +110,9 @@ include 'includes/header.php';
                     </div>
                 </div>
 
-                <!-- Producto B: C-ONE 116 -->
                 <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                     <div class="md:w-1/3 bg-gray-200 relative">
-                         <img src="assets/img/sello-tipo-cable-c-one116.avif" alt="C-ONE 116" class="w-full h-full object-contain p-4">
+                         <img src="assets/img/sello-tipo-cable-c-one116.avif" alt="C-ONE 116" class="w-full h-full object-contain p-4" loading="lazy">
                     </div>
                     <div class="p-6 md:w-2/3 flex flex-col justify-center">
                         <h3 class="text-xl font-bold text-primary mb-2">C-ONE 116</h3>
@@ -137,7 +129,6 @@ include 'includes/header.php';
         </div>
     </section>
 
-    <!-- SECCIÓN 3: LÍNEA PLÁSTICOS (Grid de 3 columnas) -->
     <section id="plasticos" class="py-20 bg-white border-t border-gray-200">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -146,10 +137,9 @@ include 'includes/header.php';
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Producto A: Quantum 12 -->
                 <div class="bg-white border border-gray-100 rounded-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
                     <div class="h-40 mb-4 flex items-center justify-center bg-gray-50 rounded-md">
-                        <img src="assets/img/precinto-plastico-quantum-ajustable.avif" alt="Quantum 12" class="h-32 w-auto object-contain">
+                        <img src="assets/img/precinto-plastico-quantum-ajustable.avif" alt="Quantum 12" class="h-32 w-auto object-contain" loading="lazy">
                     </div>
                     <h3 class="text-lg font-bold text-primary mb-2">Quantum 12</h3>
                     <p class="text-sm text-gray-500 mb-4">El estándar de la industria.</p>
@@ -157,11 +147,10 @@ include 'includes/header.php';
                     <a href="contacto?producto=quantum-12" class="block w-full border border-primary text-primary hover:bg-primary hover:text-white py-2 rounded transition-colors font-medium">Cotizar</a>
                 </div>
 
-                <!-- Producto B: Quantum R12 -->
                 <div class="bg-white border border-gray-100 rounded-lg p-6 text-center hover:shadow-xl transition-shadow duration-300 relative">
                     <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-2 py-1 rounded-bl-lg">Reforzado</div>
                     <div class="h-40 mb-4 flex items-center justify-center bg-gray-50 rounded-md">
-                        <img src="assets/img/sello-plastico-quamtum-r-12.avif" alt="Quantum R12" class="h-32 w-auto object-contain">
+                        <img src="assets/img/sello-plastico-quamtum-r-12.avif" alt="Quantum R12" class="h-32 w-auto object-contain" loading="lazy">
                     </div>
                     <h3 class="text-lg font-bold text-primary mb-2">Quantum R12</h3>
                     <p class="text-sm text-gray-500 mb-4">Mayor resistencia a la tracción.</p>
@@ -169,10 +158,9 @@ include 'includes/header.php';
                     <a href="contacto?producto=quantum-r12" class="block w-full border border-primary text-primary hover:bg-primary hover:text-white py-2 rounded transition-colors font-medium">Cotizar</a>
                 </div>
 
-                <!-- Producto C: Quantum R18 -->
                 <div class="bg-white border border-gray-100 rounded-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
                     <div class="h-40 mb-4 flex items-center justify-center bg-gray-50 rounded-md">
-                        <img src="assets/img/sello-plastico-quantum-r-18.avif" alt="Quantum R18" class="h-32 w-auto object-contain">
+                        <img src="assets/img/sello-plastico-quantum-r-18.avif" alt="Quantum R18" class="h-32 w-auto object-contain" loading="lazy">
                     </div>
                     <h3 class="text-lg font-bold text-primary mb-2">Quantum R18</h3>
                     <p class="text-sm text-gray-500 mb-4">Longitud extendida para aplicaciones especiales.</p>
@@ -183,7 +171,6 @@ include 'includes/header.php';
         </div>
     </section>
 
-    <!-- SECCIÓN 4: SOLUCIONES BANCARIAS (Banner ancho) -->
     <section id="bancario" class="py-20 bg-primary text-white relative overflow-hidden">
         <div class="absolute inset-0 opacity-10 bg-[url('assets/img/boveda.avif')] bg-repeat space"></div>
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -204,13 +191,44 @@ include 'includes/header.php';
                 </div>
                 <div class="md:w-1/2 flex justify-center">
                     <div class="relative w-full max-w-md aspect-video bg-white/10 rounded-xl backdrop-blur-sm p-4 border border-white/20 shadow-2xl">
-                        <img src="assets/img/sello-de-seguridad-para-bancos-c-cash.avif" alt="C-CASH Seal" class="w-full h-full object-contain">
+                        <img src="assets/img/sello-de-seguridad-para-bancos-c-cash.avif" alt="C-CASH Seal" class="w-full h-full object-contain" loading="lazy">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Preguntas Frecuentes sobre Sellos de Seguridad</h2>
+                <p class="text-gray-600">Resolvemos tus dudas sobre normativas, aplicaciones y tipos de precintos.</p>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-white rounded-lg shadow-sm p-6 border-l-4 border-accent">
+                    <h3 class="font-bold text-lg text-primary mb-2">¿Cuál es la diferencia entre un sello indicativo y uno de alta seguridad?</h3>
+                    <p class="text-gray-600 text-sm">
+                        Los <strong>sellos indicativos</strong> (generalmente de plástico o metal ligero) muestran evidencia visual de manipulación pero se rompen fácilmente. Los <strong>sellos de alta seguridad</strong> (certificados ISO 17712, como los de clavo o cable de acero) actúan como una barrera física robusta que requiere herramientas de corte para retirarse, siendo obligatorios para cruces fronterizos C-TPAT.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-sm p-6 border-l-4 border-accent">
+                    <h3 class="font-bold text-lg text-primary mb-2">¿Venden precintos o marchamos personalizados?</h3>
+                    <p class="text-gray-600 text-sm">
+                        Sí. Todos nuestros modelos (plástico, metal y cable) pueden personalizarse con láser. Podemos grabar tu <strong>logotipo, numeración consecutiva, códigos de barras o códigos QR</strong> para garantizar la trazabilidad total de tu carga.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-sm p-6 border-l-4 border-accent">
+                    <h3 class="font-bold text-lg text-primary mb-2">¿Qué sello necesito para exportar a Estados Unidos?</h3>
+                    <p class="text-gray-600 text-sm">
+                        Para cumplir con la normativa de aduanas y el programa C-TPAT, es obligatorio utilizar un sello clasificado como <strong>"H" (High Security)</strong> según la norma ISO 17712:2013. Nuestros modelos <em>Star One Seal</em> (botella) y <em>C-ONE 316</em> (cable) cuentan con esta certificación internacional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <?php include 'includes/footer.php'; ?>

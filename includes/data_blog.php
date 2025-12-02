@@ -322,5 +322,60 @@ $blog_posts = [
             </div>
         '
     ],
+    // 6. ROBO HORMIGA (NUEVO)
+    'como-evitar-robo-hormiga-transporte-carga' => [
+        'titulo'           => '5 Estrategias para Evitar el Robo Hormiga en el Transporte de Carga',
+        'meta_description' => 'El robo hormiga representa el 30% de las pérdidas logísticas. Descubre 5 estrategias efectivas usando sellos de seguridad y tecnología para proteger tu mercancía.',
+        'autor'            => 'Equipo de Seguridad Control One',
+        'fecha'            => '2025-12-01',
+        'categoria'        => 'Prevención de Pérdidas',
+        'imagen'           => 'assets/img/auditoria-sellos-de-seguridad.avif',
+        'extracto'         => 'Pequeños robos, grandes pérdidas. Aprende a blindar tu operación logística contra el robo hormiga utilizando sellos de seguridad estratégicos y protocolos de control.',
+        'contenido'        => '
+            <p class="lead text-xl text-gray-600 mb-6 font-medium">
+                Se estima que el "robo hormiga" (pequeñas sustracciones continuas) puede representar hasta el 30% de las mermas anuales en una empresa de transporte. Lo más peligroso es que a menudo pasa desapercibido hasta que el daño financiero es grave.
+            </p>
+
+            <h2 class="text-2xl font-bold text-primary mt-8 mb-4">1. Sellado de Cajas de Herramientas y Gabinetes</h2>
+            <p class="mb-4">
+                Muchas veces nos enfocamos en la carga principal y olvidamos los accesorios. Baterías, refacciones y herramientas son objetivos fáciles.
+            </p>
+            <p class="mb-4">
+                <strong>Solución:</strong> Utiliza sellos indicativos de plástico como el <a href="productos#plasticos" class="text-accent hover:underline font-bold">Quantum 12"</a> en cada caja de herramientas. Implementa un folio único por viaje y verifícalo al regreso.
+            </p>
+
+            <h2 class="text-2xl font-bold text-primary mt-8 mb-4">2. Protocolo de "Sello Roto, Sello Reportado"</h2>
+            <p class="mb-4">
+                Establece una política de tolerancia cero. Si un chofer llega a destino con un sello roto "accidentalmente" o sin sello, debe haber una investigación inmediata.
+            </p>
+            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-6">
+                <p class="font-bold text-yellow-700">Tip Pro:</p>
+                <p class="text-sm">Usa sellos de colores diferentes para rutas de ida y de regreso. Esto evita que los choferes reemplacen un sello roto con uno genérico que compraron por fuera.</p>
+            </div>
+
+            <h2 class="text-2xl font-bold text-primary mt-8 mb-4">3. Protección de Válvulas en Pipas</h2>
+            <p class="mb-4">
+                En el transporte de líquidos, la ordeña es común. Asegura las manivelas con sellos de cable ajustables como el <strong>C-ONE 116</strong>. Al ser de cable trenzado, no pueden ser pegados nuevamente si son cortados.
+            </p>
+
+            <h2 class="text-2xl font-bold text-primary mt-8 mb-4">4. Auditorías Sorpresa en Ruta</h2>
+            <p class="mb-4">
+                No esperes a que el camión llegue al patio. Realiza inspecciones aleatorias en puntos de descanso seguros. Verifica que los folios de los sellos coincidan con la hoja de salida.
+            </p>
+
+            <h2 class="text-2xl font-bold text-primary mt-8 mb-4">5. Uso de Sellos de Alta Seguridad (ISO 17712)</h2>
+            <p class="mb-4">
+                Para la carga valiosa, no escatimes. Un sello de botella (clavo) certificado "H" como el <strong>Star One Seal</strong> no solo cumple con la norma, sino que requiere cizallas grandes para romperse, disuadiendo al ladrón oportunista que solo busca un acceso rápido.
+            </p>
+
+            <div class="mt-8 p-6 bg-gray-100 rounded-lg text-center">
+                <h3 class="text-xl font-bold text-primary mb-2">¿Necesitas asesoría para tu flota?</h3>
+                <p class="text-gray-600 mb-4">Nuestros expertos pueden ayudarte a diseñar un esquema de seguridad a medida.</p>
+                <a href="contacto" class="inline-block bg-accent text-white px-6 py-3 rounded font-bold hover:bg-orange-600 transition-colors">
+                    Contactar a un Especialista
+                </a>
+            </div>
+        '
+    ],
 ];
 ?>
