@@ -1,31 +1,28 @@
 <?php
-// enviar.php - BLINDADO CONTRA SPAM + CONFIGURACIÓN GMAIL
+// enviar.php - BLINDADO CONTRA SPAM + CONFIGURACIÓN SEGURA
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
+// Cargar librerías
 require 'librerias/PHPMailer-master/src/Exception.php';
 require 'librerias/PHPMailer-master/src/PHPMailer.php';
 require 'librerias/PHPMailer-master/src/SMTP.php';
 
+// Cargar credenciales de forma segura
+require 'config.php'; 
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // --- 1. CAPA DE SEGURIDAD (HONEYPOT) ---
-    // Verificamos si el bot llenó el campo trampa 'website_check'
-    // Este campo debe existir en tu contact.php (como lo hicimos en el paso anterior)
     if (!empty($_POST['website_check'])) {
-        // Es un bot. Detenemos la ejecución silenciosamente.
         die(); 
     }
 
     // --- 2. CAPA DE SEGURIDAD (LINK SPAM) ---
-    // Verificamos si el mensaje contiene enlaces http o https
-    // El ataque que sufriste enviaba muchos links. Esto lo detiene.
     $mensaje_raw = $_POST["mensaje"];
     if (strpos($mensaje_raw, 'http://') !== false || strpos($mensaje_raw, 'https://') !== false) {
-        // Redirigimos con error o mostramos mensaje y matamos el proceso
-        // Esto evita que tu correo se sature
         header("Location: contacto?status=error");
         die();
     }
@@ -42,10 +39,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Traducción volumen
     $volumen_texto = $volumen;
-    if($volumen == 'menos_1000') $volumen_texto = "Menos de 1,000 piezas";
-    if($volumen == '1000_5000')  $volumen_texto = "1,000 - 5,000 piezas";
-    if($volumen == '5000_10000') $volumen_texto = "5,000 - 10,000 piezas";
-    if($volumen == 'mas_10000')  $volumen_texto = "Más de 10,000 piezas";
+    switch ($volumen) {
+        case 'menos_1000': $volumen_texto = "Menos de 1,000 piezas"; break;
+        case '1000_5000':  $volumen_texto = "1,000 - 5,000 piezas"; break;
+        case '5000_10000': $volumen_texto = "5,000 - 10,000 piezas"; break;
+        case 'mas_10000':  $volumen_texto = "Más de 10,000 piezas"; break;
+    }
 
     $mail = new PHPMailer(true);
 
@@ -55,22 +54,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host       = 'smtp.gmail.com'; 
         $mail->SMTPAuth   = true;
         
-        // 1. TU GMAIL (El que envía)
-        $mail->Username   = 'controlone342@gmail.com'; 
+        // USO DE CREDENCIALES DESDE config.php
+        $mail->Username   = SMTP_USERNAME; 
+        $mail->Password   = SMTP_PASSWORD; 
         
-        // 2. TU CONTRASEÑA DE APLICACIÓN (Sin espacios)
-        $mail->Password   = 'gofrpjkrwlodviyk'; 
-        
-        // Gmail usa TLS en el puerto 587
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;     
         $mail->Port       = 587;                              
 
         // --- DESTINATARIOS ---
-        // Gmail exige que el "From" sea tu misma cuenta
-        $mail->setFrom('controlone342@gmail.com', 'Web Control One'); 
+        $mail->setFrom(SMTP_USERNAME, 'Web Control One'); 
         
-        // AQUÍ LLEGA EL AVISO (A tu correo corporativo)
-        $mail->addAddress('socialmedia@controlone.com.mx', 'Ventas Control One'); 
+        // Destinatario definido en config.php
+        $mail->addAddress(MAIL_TO_ADDRESS, MAIL_TO_NAME); 
         
         // Responder al cliente
         $mail->addReplyTo($email, $nombre); 
@@ -102,9 +97,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
 
     } catch (Exception $e) {
-        // Si falla Gmail, es rarísimo, pero mostramos error
-        echo "<h1>Error Gmail:</h1>";
-        echo "Mensaje técnico: " . $mail->ErrorInfo;
+        // Loguear el error internamente en lugar de mostrarlo al usuario si es posible
+        error_log("Error al enviar correo: " . $mail->ErrorInfo);
+        header("Location: contacto?status=error"); // Redirigir a error genérico
         exit();
     }
 } else {

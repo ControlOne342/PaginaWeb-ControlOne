@@ -86,6 +86,25 @@ include 'includes/header.php';
                             Tus datos están protegidos. Consulta nuestro <a href="/aviso-privacidad" class="underline hover:text-accent">Aviso de Privacidad</a>.
                         </p>
                     </form>
+                    <script>
+                    document.querySelector('form').addEventListener('submit', function(e) {
+                        var btn = this.querySelector('button[type="submit"]');
+                        var originalText = btn.innerText;
+                        
+                        // Validación simple de teléfono (mínimo 10 números)
+                        var tel = document.getElementById('telefono').value;
+                        if(tel.length < 10) {
+                            e.preventDefault();
+                            alert('Por favor, ingresa un número de teléfono válido (10 dígitos).');
+                            return;
+                        }
+
+                        // Efecto de carga
+                        btn.disabled = true;
+                        btn.innerText = 'Enviando... 🚀';
+                        btn.classList.add('opacity-50', 'cursor-not-allowed');
+                    });
+                    </script>
                 </div>
 
                 <div class="lg:w-1/3 space-y-8">
@@ -125,7 +144,6 @@ include 'includes/header.php';
                     
                     <div class="bg-white p-2 rounded-lg shadow-md h-64 overflow-hidden">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.8326278203527!2d-99.20917677151544!3d19.57928689885347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21d90a5615a3d%3A0xb4bb76ff7e6d870b!2sControl%20One%20Platform!5e1!3m2!1ses-419!2smx!4v1763742336943!5m2!1ses-419!2smx" class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación Control One"></iframe>
-                    </div>
                     </div>
                 </div>
 

@@ -34,7 +34,7 @@ include 'includes/header.php';
             <div class="flex items-center mb-12">
                 <div class="w-2 h-12 bg-primary mr-4"></div>
                 <div>
-                    <h2 class="text-3xl font-bold text-primary">Alta Seguridad (ISO 17712)</h2>
+                    <h2 class="text-3xl font-bold text-primary">Sellos de Alta Seguridad para Contenedores (ISO 17712)</h2>
                     <p class="text-gray-500 mt-1"><strong>Sellos de botella y clavo</strong> certificados C-TPAT para exportación y aduanas.</p>
                 </div>
             </div>
@@ -113,52 +113,80 @@ include 'includes/header.php';
                 </div>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                    <div class="md:w-1/3 bg-gray-200 relative flex justify-center items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="flex flex-col bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow border border-gray-100">
+                    <div class="h-64 bg-gray-50 relative flex justify-center items-center p-4">
                          <img src="assets/img/sello-tipo-cable-c-onex6.avif" 
                               alt="Sello de cable ajustable para válvulas" 
-                              class="w-full h-full object-contain p-4"
+                              class="max-w-full max-h-full object-contain"
                               loading="lazy"
                               decoding="async"
                               width="300"
                               height="300">
                     </div>
-                    <div class="p-6 md:w-2/3 flex flex-col justify-center">
+                    <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-primary mb-2">C-ONE X6 (Ajustable)</h3>
-                        <div class="mb-4">
+                        <div class="mb-4 flex-grow">
                             <span class="text-sm font-semibold text-gray-500 uppercase">Ideal para:</span>
-                            <p class="text-gray-700">Válvulas de pipas, medidores y cajas de herramientas.</p>
-                            <p class="text-xs text-gray-500 mt-1">Cable 1.8 mm | Resistencia > 306 kgF</p>
+                            <p class="text-gray-700 text-sm mt-1">Válvulas de pipas, medidores y cajas de herramientas.</p>
+                            <p class="text-xs text-gray-500 mt-2">Cable 1.8 mm | Resistencia > 306 kgF</p>
                         </div>
-                        <a href="contacto?producto=c-one-x6" class="text-accent font-bold hover:text-orange-600 flex items-center">
-                            Solicitar Precio <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        <a href="contacto?producto=c-one-x6" class="mt-auto block w-full text-center border-2 border-accent text-accent hover:bg-accent hover:text-white font-bold py-2 rounded transition-colors">
+                            Cotizar
                         </a>
                     </div>
                 </div>
 
-                <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                    <div class="md:w-1/3 bg-gray-200 relative flex justify-center items-center">
+                <div class="flex flex-col bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow border border-gray-100">
+                    <div class="h-64 bg-gray-50 relative flex justify-center items-center p-4">
                          <img src="assets/img/sello-tipo-cable-c-one116.avif" 
                               alt="Precinto de cable 1/16" 
-                              class="w-full h-full object-contain p-4"
+                              class="max-w-full max-h-full object-contain"
                               loading="lazy"
                               decoding="async"
                               width="300"
                               height="300">
                     </div>
-                    <div class="p-6 md:w-2/3 flex flex-col justify-center">
+                    <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-primary mb-2">C-ONE 116 (Aluminio)</h3>
-                        <div class="mb-4">
+                        <div class="mb-4 flex-grow">
                             <span class="text-sm font-semibold text-gray-500 uppercase">Ideal para:</span>
-                            <p class="text-gray-700">Intemperie, ambientes salinos y químicos.</p>
-                            <p class="text-xs text-gray-500 mt-1">Cable 1/16" (1.58 mm) | Cuerpo Anodizado</p>
+                            <p class="text-gray-700 text-sm mt-1">Intemperie, ambientes salinos y químicos.</p>
+                            <p class="text-xs text-gray-500 mt-2">Cable 1/16" (1.58 mm) | Cuerpo Anodizado</p>
                         </div>
-                        <a href="contacto?producto=c-one-116" class="text-accent font-bold hover:text-orange-600 flex items-center">
-                            Solicitar Precio <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        <a href="contacto?producto=c-one-116" class="mt-auto block w-full text-center border-2 border-accent text-accent hover:bg-accent hover:text-white font-bold py-2 rounded transition-colors">
+                            Cotizar
                         </a>
                     </div>
                 </div>
+
+                <div class="flex flex-col bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow border border-gray-100">
+                    <div class="h-64 bg-gray-50 relative flex justify-center items-center p-4">
+                         <img src="assets/img/sello-tipo-cable-c-one332.avif" 
+                              alt="Sello de cable de acero grueso C-ONE 332" 
+                              class="max-w-full max-h-full object-contain"
+                              loading="lazy"
+                              width="300"
+                              height="300">
+                         <div class="absolute top-0 right-0 bg-gray-800 text-white text-xs font-bold px-2 py-1 rounded-bl-lg">Uso Rudo</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-primary mb-2">C-ONE 332 (Cable Grueso)</h3>
+                        <div class="mb-4 flex-grow">
+                            <span class="text-sm font-semibold text-gray-500 uppercase">Ideal para:</span>
+                            <p class="text-gray-700 text-sm mt-1">Tolvas, ferrotolvas y compuertas pesadas que requieren mayor tensión.</p>
+                            <div class="mt-3 text-xs text-gray-500 space-y-1">
+                                <p>• Cable: <strong>3/32" (2.32 mm)</strong></p>
+                                <p>• Resistencia: <strong>> 400 kgF</strong></p>
+                                <p>• Cuerpo: Zamak (Aleación de Zinc)</p>
+                            </div>
+                        </div>
+                        <a href="contacto?producto=c-one-332" class="mt-auto block w-full text-center border-2 border-accent text-accent hover:bg-accent hover:text-white font-bold py-2 rounded transition-colors">
+                            Cotizar
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -201,7 +229,7 @@ include 'includes/header.php';
                     </div>
                     <h3 class="text-lg font-bold text-primary mb-2">Quantum R12 (Reforzado)</h3>
                     <p class="text-sm text-gray-500 mb-4">Mayor resistencia a la tracción manual.</p>
-                    <span class="inline-block bg-blue-100 text-primary text-xs font-bold px-2 py-1 rounded mb-4">Alta Tracción</span>
+                    <span class="inline-block bg-blue-100 text-primary text-xs font-bold px-2 py-1 rounded mb-4">Alta Resistencia</span>
                     <a href="contacto?producto=quantum-r12" class="block w-full border border-primary text-primary hover:bg-primary hover:text-white py-2 rounded transition-colors font-medium">Cotizar</a>
                 </div>
 
@@ -237,7 +265,7 @@ include 'includes/header.php';
             <div class="bg-white rounded-lg shadow-md p-8 flex flex-col md:flex-row gap-8 items-center border-l-8 border-red-500">
                 <div class="md:w-1/3 flex justify-center">
                     <div class="w-full h-64 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
-                        <img src="assets/img/etiqueta-seguridad-void.avif" 
+                        <img src="assets/img/secure-label.avif" 
                              alt="Etiqueta VOID de seguridad mostrando mensaje de violado" 
                              class="max-w-full max-h-full object-cover"
                              loading="lazy"

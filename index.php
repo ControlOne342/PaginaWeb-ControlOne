@@ -36,17 +36,17 @@ include 'includes/data_blog.php';
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="lg:w-1/2">
-                    <span class="text-accent font-bold tracking-widest uppercase text-sm">Blindaje Logístico Total</span>
-                    <h2 class="text-3xl font-bold text-primary mt-2 mb-6">Soluciones integrales contra el robo hormiga en el transporte</h2>
+                    <span class="text-accent font-bold tracking-widest uppercase text-sm">Blindaje Logístico Certificado</span>
+                    <h2 class="text-3xl font-bold text-primary mt-2 mb-6">Soluciones de seguridad C-TPAT para transporte de carga internacional</h2>
                     <div class="prose text-gray-600 leading-relaxed">
                         <p class="mb-4">
-                            En <strong>Control One</strong>, somos líderes en la fabricación de <strong>sellos de seguridad para transporte</strong> y logística. Entendemos que cada trayecto es un riesgo, por eso desarrollamos dispositivos inviolables.
+                            En <strong>Control One</strong>, fabricamos <strong>precintos de alta seguridad</strong> diseñados para blindar la cadena de suministro logística. Entendemos que cada trayecto es un riesgo, por eso desarrollamos dispositivos que cumplen normativas globales.
                         </p>
                         <p class="mb-4">
-                            Nuestra gama incluye desde <strong>sellos fiscales</strong> y etiquetas de seguridad para control de inventarios, hasta robustos <strong>candados de seguridad para contenedores</strong> marítimos y tráileres.
+                            Nuestra gama abarca desde precintos indicativos para control de inventarios, <strong>hasta candados de alta seguridad certificados ISO 17712 / C-TPAT</strong> ideales para asegurar contenedores marítimos, cajas de tráiler y operaciones de exportación.
                         </p>
                         <p>
-                            Ya sea que busques <strong>cintillos de seguridad</strong> para cajas plásticas o precintos de clavo para exportación, tenemos el stock para envío inmediato.
+                            Ya sea que busques <strong>sellos de cable de acero</strong> ajustables o sellos de botella (perno) obligatorios para cruces fronterizos, garantizamos cumplimiento normativo y stock inmediato.
                         </p>
                     </div>
                 </div>
@@ -57,15 +57,15 @@ include 'includes/data_blog.php';
                     </div>
                     <div class="bg-industrial p-6 rounded-lg text-center border border-gray-100 hover:shadow-md transition-shadow">
                         <span class="block text-4xl font-bold text-accent mb-2">ISO</span>
-                        <span class="text-sm text-gray-600 font-medium">Norma 17712 Certificada</span>
+                        <span class="text-sm text-gray-600 font-medium">Norma 17712:2013 "H"</span>
                     </div>
                     <div class="bg-industrial p-6 rounded-lg text-center border border-gray-100 hover:shadow-md transition-shadow">
                         <span class="block text-4xl font-bold text-primary mb-2">24h</span>
                         <span class="text-sm text-gray-600 font-medium">Envíos Urgentes</span>
                     </div>
                     <div class="bg-industrial p-6 rounded-lg text-center border border-gray-100 hover:shadow-md transition-shadow">
-                        <span class="block text-4xl font-bold text-accent mb-2">MX</span>
-                        <span class="text-sm text-gray-600 font-medium">Cobertura Nacional</span>
+                        <span class="block text-4xl font-bold text-accent mb-2">C-TPAT</span>
+                        <span class="text-sm text-gray-600 font-medium">Cumplimiento Aduanero</span>
                     </div>
                 </div>
             </div>
