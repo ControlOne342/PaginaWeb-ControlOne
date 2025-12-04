@@ -85,26 +85,32 @@ include 'includes/header.php';
 </main>
 
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "<?php echo $post['titulo']; ?>",
-  "image": ["https://controlone.com.mx/<?php echo $post['imagen']; ?>"],
-  "datePublished": "<?php echo $post['fecha']; ?>",
-  "author": {
-    "@type": "Organization",
-    "name": "<?php echo $post['autor']; ?>"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Control One",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://controlone.com.mx/assets/img/logo-control-one-industrial.avif"
-    }
-  },
-  "description": "<?php echo strip_tags($meta_description); ?>"
-}
+<?php
+// Generamos el array de datos estructurados
+$schemaData = [
+    "@context" => "https://schema.org",
+    "@type" => "BlogPosting",
+    "headline" => $post['titulo'],
+    "image" => ["https://controlone.com.mx/" . $post['imagen']],
+    "datePublished" => $post['fecha'],
+    "author" => [
+        "@type" => "Organization",
+        "name" => $post['autor']
+    ],
+    "publisher" => [
+        "@type" => "Organization",
+        "name" => "Control One",
+        "logo" => [
+            "@type" => "ImageObject",
+            "url" => "https://controlone.com.mx/assets/img/logo-control-one-industrial.avif"
+        ]
+    ],
+    "description" => strip_tags($meta_description)
+];
+
+// Imprimimos el JSON codificado correctamente
+echo json_encode($schemaData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+?>
 </script>
 
 <?php include 'includes/footer.php'; ?>
